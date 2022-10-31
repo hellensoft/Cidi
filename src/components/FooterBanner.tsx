@@ -9,7 +9,7 @@ interface IFoooterBanner {
 const FoooterBanner: FC<IFoooterBanner> = ({ text }) => {
 	return (
 		<SectionWrapper>
-			<div className="bg-darkBlue -mb-12 flex items-center justify-between px-28 py-6 rounded-tl-[45px] shadow-[0px_15px_44px_rgba(0,122,255,0.15)] rounded-br-[45px]">
+			<div className="bg-darkBlue -mb-12 mt-20 flex items-center justify-between px-28 py-6 rounded-tl-[45px] shadow-[0px_15px_44px_rgba(0,122,255,0.15)] rounded-br-[45px]">
 				<h2 className="text-white text-2xl font-semibold">{text}</h2>
 				<Link
 					to="/donation"

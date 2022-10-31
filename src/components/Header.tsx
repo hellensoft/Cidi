@@ -11,7 +11,7 @@ const Header: FC<IHeader> = () => {
 	const { pathname } = useLocation();
 
 	return (
-		<div className="flex items-center justify-between">
+		<div className="flex items-center justify-between bg-white shadow-[0px_12px_24px_rgba(0,0,0,0.04)]">
 			<div className="pl-[calc(((100vw-1222px)/2))]">
 				<img
 					src="/images/cidi-logo.png"
