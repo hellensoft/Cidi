@@ -1,0 +1,72 @@
+[
+	{
+		"name": "Home",
+		"link": "/",
+		"multiple": false,
+		"end": true
+	},
+	{
+		"name": "About",
+		"link": "/about",
+		"multiple": false,
+		"end": false
+	},
+	{
+		"name": "Projects",
+		"link": "/projects",
+		"multiple": true,
+		"end": false,
+		"links": [
+			{
+				"name": "Education",
+				"link": "/projects/education",
+				"end": false
+			},
+			{
+				"name": "Agriculture",
+				"link": "/projects/agriculture",
+				"end": false
+			},
+			{
+				"name": "Water Sanitation",
+				"link": "/projects/water-sanitation",
+				"end": false
+			}
+		]
+	},
+	{
+		"name": "Donation",
+		"link": "/donation",
+		"multiple": false,
+		"end": false
+	},
+	{
+		"name": "News and Events",
+		"link": "/news",
+		"multiple": true,
+		"end": false,
+		"links": [
+			{
+				"name": "Recent News",
+				"link": "/news-events/recent-news",
+				"end": false
+			},
+			{
+				"name": "Upcoming Events",
+				"link": "/news-events/upcoming-events",
+				"end": false
+			},
+			{
+				"name": "Media & Gallery",
+				"link": "/news-events/media-gallery",
+				"end": false
+			}
+		]
+	},
+	{
+		"name": "Contact Us",
+		"link": "/contact",
+		"multiple": false,
+		"end": false
+	}
+]

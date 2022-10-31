@@ -13,7 +13,10 @@ module.exports = {
 		extend: {
 			colors: {
 				darkBlue: "#111C42",
+				lightText: "#FFFFFF99",
+				darkText: "#3A4154",
 				textBlue: "#111C4266",
+				textGray: "#111C4280",
 				greenPrimary: "#59BA51",
 				sectionGray: "#3A415408",
 				borderGray: "#3A415433",
