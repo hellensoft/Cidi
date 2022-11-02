@@ -1,5 +1,5 @@
-import { FC } from "react";
-import { Routes, Route } from "react-router-dom";
+import { FC, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./pages/About";
@@ -13,6 +13,12 @@ import WaterSanitation from "./pages/projects/WaterSanitation";
 interface IApp {}
 
 const App: FC<IApp> = () => {
+	const location = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location]);
+
 	return (
 		<div>
 			<Header />

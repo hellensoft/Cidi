@@ -1,8 +1,17 @@
 import { FC } from "react";
+import {
+	FaFacebookF,
+	FaTwitter,
+	FaInstagram,
+	FaLinkedinIn,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 import FoooterBanner from "../components/FooterBanner";
 import PageIntro from "../components/PageIntro";
 import SectionWrapper from "../components/SectionWrapper";
 import team from "../data/ourTeam.json";
+import faqs from "../data/aboutFaqs.json";
+import Faqs from "../components/Faqs";
 
 interface IAbout {}
 
@@ -146,18 +155,42 @@ const About: FC<IAbout> = () => {
 					<div className="grid grid-cols-3 gap-12 mt-12">
 						{team.map((member, index) => (
 							<div
-								className="relative hover:cursor-pointer group aspect-[274/330] w-full flex items-end"
+								className="relative group aspect-[274/330] w-full flex items-end"
 								key={index}
 								style={{
 									backgroundImage: `url(${member.image})`,
 								}}
 							>
-								<div className="hidden group-hover:inline-block duration-300 w-full aspect-[274/211] bg-[linear-gradient(180deg,_rgba(58,65,84,0)_0%,_rgba(58,65,84,0.69)_54.19%,_#3A4154_100%)]"></div>
+								<div className="hidden group-hover:inline-block duration-300 w-full aspect-[274/211] bg-[linear-gradient(180deg,_rgba(58,65,84,0)_0%,_rgba(58,65,84,0.69)_54.19%,_#3A4154_100%)]">
+									<div className="px-4 pb-8 flex items-start h-full justify-end flex-col">
+										<h2 className="text-white text-2xl font-semibold">
+											{member.name}
+										</h2>
+										<p className="text-sm text-lightText">
+											{member.role}
+										</p>
+										<div className="flex items-center space-x-4 mt-4">
+											<Link to="#">
+												<FaTwitter className="text-[#888888] h-5 w-5" />
+											</Link>
+											<Link to="#">
+												<FaFacebookF className="text-[#888888] h-5 w-5" />
+											</Link>
+											<Link to="#">
+												<FaInstagram className="text-[#888888] h-5 w-5" />
+											</Link>
+											<Link to="#">
+												<FaLinkedinIn className="text-[#888888] h-5 w-5" />
+											</Link>
+										</div>
+									</div>
+								</div>
 							</div>
 						))}
 					</div>
 				</div>
 			</SectionWrapper>
+			<Faqs faqs={faqs} />
 			<FoooterBanner text="Help us educate a Child" />
 		</div>
 	);

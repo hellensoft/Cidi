@@ -1,26 +1,32 @@
 [
     {
         "name": "Henry Katma",
-        "image": "/images/team-1.png"
+        "image": "/images/team-1.png",
+        "role": "Founder"
     },
     {
         "name": "Henry Katma",
-        "image": "/images/team-3.png"
+        "image": "/images/team-3.png",
+        "role": "Founder"
     },
     {
         "name": "Henry Katma",
-        "image": "/images/team-2.png"
+        "image": "/images/team-2.png",
+        "role": "Founder"
     },
     {
         "name": "Henry Katma",
-        "image": "/images/team-2.png"
+        "image": "/images/team-2.png",
+        "role": "Founder"
     },
     {
         "name": "Henry Katma",
-        "image": "/images/team-1.png"
+        "image": "/images/team-1.png",
+        "role": "Founder"
     },
     {
         "name": "Henry Katma",
-        "image": "/images/team-3.png"
+        "image": "/images/team-3.png",
+        "role": "Founder"
     }
 ]
