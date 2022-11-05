@@ -38,7 +38,7 @@ const Header: FC<IHeader> = () => {
 								</div>
 							</div>
 						))}
-						<Link to="#" className="flex items-center space-x-3">
+						<Link to="/volunteer" className="flex items-center space-x-3">
 							<img
 								src="/images/svgs/volunteer-infor.svg"
 								alt="volunteer"
@@ -82,7 +82,7 @@ const Header: FC<IHeader> = () => {
 												</Menu.Button>
 												<Menu.Items
 													as="div"
-													className="absolute mt-6 py-6 px-5 w-[200px] shadow-[0px_12px_24px_rgba(0,0,0,0.04)] bg-white flex flex-col items-start space-y-2"
+													className="absolute mt-6 py-6 px-5 w-[280px] shadow-[0px_12px_24px_rgba(0,0,0,0.04)] bg-white z-50 flex flex-col items-start space-y-2"
 												>
 													{link.links?.map(
 														(subLink, index) => (

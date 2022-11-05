@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Agriculture from "./pages/projects/Agriculture";
 import Education from "./pages/projects/Education";
 import WaterSanitation from "./pages/projects/WaterSanitation";
+import Volunteer from "./pages/Volunteer";
 
 interface IApp {}
 
@@ -27,6 +28,7 @@ const App: FC<IApp> = () => {
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/donation" element={<Donation />} />
+				<Route path="/volunteer" element={<Volunteer />} />
 				<Route path="/projects/education" element={<Education />} />
 				<Route path="/projects/agriculture" element={<Agriculture />} />
 				<Route

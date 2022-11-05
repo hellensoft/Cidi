@@ -1,0 +1,14 @@
+[
+	{
+		"bgImage": "/images/agriculture-bg.png",
+		"title": "Miswe Livestock and Crop Production Project",
+		"subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A leo sagittis quis euismod.",
+		"ctaLink": "/projects/agriculture"
+	},
+	{
+		"bgImage": "/images/education-bg.png",
+		"title": "Education",
+		"subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A leo sagittis quis euismod.",
+		"ctaLink": "/projects/education"
+	}
+]

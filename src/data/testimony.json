@@ -1,0 +1,22 @@
+[
+	{
+		"image": "/images/testimony-1.png",
+		"name": "James",
+		"testimony": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus nisi consectetur porta quam ut ultrices. Praesent nunc ”."
+	},
+	{
+		"image": "/images/testimony-2.png",
+		"name": "Joseph",
+		"testimony": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus nisi consectetur porta quam ut ultrices. Praesent nunc ”."
+	},
+	{
+		"image": "/images/testimony-3.png",
+		"name": "Rodrigus",
+		"testimony": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus nisi consectetur porta quam ut ultrices. Praesent nunc ”."
+	},
+	{
+		"image": "/images/testimony-2.png",
+		"name": "Rashford",
+		"testimony": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus nisi consectetur porta quam ut ultrices. Praesent nunc ”."
+	}
+]

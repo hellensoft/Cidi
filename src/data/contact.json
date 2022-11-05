@@ -1,0 +1,29 @@
+[
+	{
+		"icon": "/images/svgs/clock.svg",
+		"title": "Opening Hours",
+		"items": [
+			"Mon - Fri: 9 AM - 6 PM",
+			"Saturday: 9 AM - 4 PM",
+			"Sunday: Closed"
+		]
+	},
+	{
+		"icon": "/images/svgs/location.svg",
+		"title": "Address",
+		"items": [
+			"Plot No. 421, Mikocheni B,",
+			"P.O Box 8028,",
+			"Dar es Salaam, Tanzania"
+		]
+	},
+	{
+		"icon": "/images/svgs/headphones.svg",
+		"title": "Get In Touch",
+		"items": [
+			"Telephone: +255 784 209155",
+			"+255 784 209890",
+			"Email: info@cidi.co.tz"
+		]
+	}
+]

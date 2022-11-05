@@ -99,7 +99,6 @@ const Education: FC<IEducation> = () => {
 								</Link>
 							</div>
 						</div>
-						<Faqs faqs={faqs} titlePosition="start" />
 					</div>
 					<div className="relative w-full">
 						<div className="w-full sticky top-6 bg-darkBlue flex flex-col items-center p-6">
@@ -115,6 +114,7 @@ const Education: FC<IEducation> = () => {
 						</div>
 					</div>
 				</div>
+				<Faqs faqs={faqs} titlePosition="center" />
 			</SectionWrapper>
 			<FoooterBanner text="Help us educate a Child" />
 		</div>
