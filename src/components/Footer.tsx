@@ -43,16 +43,12 @@ const Footer: FC<IFooter> = () => {
 					<div>
 						<img src="/images/cidi-logo.png" alt="company logo" />
 						<p className="text-textBlue text-sm md:text-base mt-4 max-w-[516px]">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Ultricies nulla enim nec massa morbi ut diam.
-							Porta morbi ac vitae integer vel aliquet ipsum,
-							facilisis varius. At suspendisse purus proin nunc.
-							Morbi vulputate suscipit orci et, feugiat vivamus
-							pulvinar ut. Pulvinar quam faucibus vitae massa,
-							ipsum, varius. Odio faucibus cursus nascetur dolor
-							posuere. Accumsan, cursus est in massa nam. Ut
-							pretium a sit nulla blandit in feugiat. Felis nec
-							pellentesque ut aliquam facilisis libero.
+							Community Information Development Initiatives (CIDI)
+							is a non governmental organisation based in Tanzania
+							mainland. CIDI is an education and agricultural
+							based organisation with its main projects being
+							quality improved education and agructural economic
+							activities.
 						</p>
 					</div>
 					<div className="pl-0 md:pl-16 mt-8 md:mt-24 flex flex-col items-start w-full justify-between">

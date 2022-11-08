@@ -30,7 +30,6 @@ const Donation: FC<IDonation> = () => {
 					onSubmit={(values) => console.log(values)}
 				>
 					<Form className="space-y-8">
-
 						<div className="space-y-2">
 							<label
 								htmlFor="firstName"
@@ -56,14 +55,14 @@ const Donation: FC<IDonation> = () => {
 							</div>
 						</div>
 
-						<div className="space-y-2">
-							<label
-								htmlFor="donationType"
-								className="text-darkBlue text-xl"
-							>
-								Type of Donation
-							</label>
-							<div className="grid grid-cols-2 gap-8">
+						<div className="grid grid-cols-2 gap-8">
+							<div className="space-y-2">
+								<label
+									htmlFor="donationType"
+									className="text-darkBlue text-xl"
+								>
+									Type of Donation
+								</label>
 								<Field
 									name="donationType"
 									id="donationType"
@@ -74,16 +73,14 @@ const Donation: FC<IDonation> = () => {
 									<option value="credit">Credit</option>
 								</Field>
 							</div>
-						</div>
 
-						<div className="space-y-2">
-							<label
-								htmlFor="amount"
-								className="text-darkBlue text-xl"
-							>
-								Amount
-							</label>
-							<div className="grid grid-cols-2 gap-8">
+							<div className="space-y-2">
+								<label
+									htmlFor="amount"
+									className="text-darkBlue text-xl"
+								>
+									Amount
+								</label>
 								<Field
 									name="amount"
 									id="amount"

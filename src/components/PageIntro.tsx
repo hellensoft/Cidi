@@ -9,7 +9,7 @@ interface IPageIntro {
 const PageIntro: FC<IPageIntro> = ({ name }) => {
 	return (
 		<SectionWrapper>
-			<div className="w-full max-w-[594px] mx-auto py-28 flex items-center flex-col">
+			<div className="w-full max-w-[594px] mx-auto py-12 sm:py-28 flex items-center flex-col">
 				<h1 className="text-[44px] text-darkBlue text-center leading-[55px] font-semibold">
 					{name}
 				</h1>

@@ -13,7 +13,7 @@ const Education: FC<IEducation> = () => {
 		<div>
 			<PageIntro name="Education" />
 			<SectionWrapper>
-				<div className="grid grid-cols-[1fr_350px] gap-8">
+				<div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8">
 					<div>
 						<div>
 							<img
@@ -100,7 +100,7 @@ const Education: FC<IEducation> = () => {
 							</div>
 						</div>
 					</div>
-					<div className="relative w-full">
+					<div className="hidden lg:inline-block relative w-full">
 						<div className="w-full sticky top-6 bg-darkBlue flex flex-col items-center p-6">
 							<h1 className="text-white text-[34px] leading-[64px] mb-6">
 								Help us, Help them to reach for their Dreams..

@@ -41,29 +41,6 @@
 		"end": false
 	},
 	{
-		"name": "News and Events",
-		"link": "/news",
-		"multiple": true,
-		"end": false,
-		"links": [
-			{
-				"name": "Recent News",
-				"link": "/news-events/recent-news",
-				"end": false
-			},
-			{
-				"name": "Upcoming Events",
-				"link": "/news-events/upcoming-events",
-				"end": false
-			},
-			{
-				"name": "Media & Gallery",
-				"link": "/news-events/media-gallery",
-				"end": false
-			}
-		]
-	},
-	{
 		"name": "Contact Us",
 		"link": "/contact",
 		"multiple": false,

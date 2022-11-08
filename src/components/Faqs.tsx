@@ -23,7 +23,7 @@ const Faqs: FC<IFaqs> = ({ faqs, titlePosition = "center" }) => {
 			<div
 				className={`max-w-[753px] mt-4 ${
 					titlePosition === "center" && "mx-auto"
-				} px-20 py-16 divide-y divide-[rgba(11,12,27,0.09)] shadow-[0px_12px_24px_rgba(0,0,0,0.06)] bg-white rounded`}
+				} px-6 sm:px-20 py-16 divide-y divide-[rgba(11,12,27,0.09)] shadow-[0px_12px_24px_rgba(0,0,0,0.06)] bg-white rounded`}
 			>
 				{faqs.map((faq, index) => (
 					<div key={index} className="py-4">
@@ -36,10 +36,12 @@ const Faqs: FC<IFaqs> = ({ faqs, titlePosition = "center" }) => {
 							}}
 						>
 							<div className="flex items-center justify-between">
-								<h4 className="text-darkBlue text-md">
+								<h4 className="text-darkBlue text-start text-base sm:text-md">
 									{faq.question}
 								</h4>
-								<BsPlusCircle className="w-5 h-5" />
+								<div>
+									<BsPlusCircle className="w-5 h-5 ml-1" />
+								</div>
 							</div>
 						</button>
 						<Transition

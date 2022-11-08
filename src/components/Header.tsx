@@ -1,14 +1,18 @@
-import { FC, Fragment } from "react";
+import { FC, Fragment, useState } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import navLinks from "../data/topNav.json";
 import topInfor from "../data/topInfor.json";
-import { Menu } from "@headlessui/react";
+import { Menu, Transition, Dialog } from "@headlessui/react";
 import { FaAngleDown } from "react-icons/fa";
+import { CgMenu } from "react-icons/cg";
+import { IoClose } from "react-icons/io5";
+import { BsChevronDown } from "react-icons/bs";
 
 interface IHeader {}
 
 const Header: FC<IHeader> = () => {
 	const { pathname } = useLocation();
+	const [openSideBar, setOpenSideBar] = useState(false);
 
 	return (
 		<div className="flex items-center justify-between bg-white shadow-[0px_12px_24px_rgba(0,0,0,0.04)]">
@@ -16,11 +20,157 @@ const Header: FC<IHeader> = () => {
 				<img
 					src="/images/cidi-logo.png"
 					alt="company logo"
-					className="pl-4"
+					className="pl-4 w-20 lg:w-auto h-auto lg:h-auto py-4 lg:py-0"
 				/>
 			</div>
+			<button
+				onClick={() => setOpenSideBar(!openSideBar)}
+				className="ml-auto space-x-8 inline-block mr-4 lg:hidden z-40"
+			>
+				{openSideBar ? (
+					<IoClose className="text-darkBlue h-7 w-7" />
+				) : (
+					<CgMenu className="text-darkBlue h-7 w-7" />
+				)}
+			</button>
+
+			<Transition show={openSideBar} as={Fragment}>
+				<Dialog
+					open={openSideBar}
+					onClose={() => setOpenSideBar(false)}
+					className="relative z-30"
+				>
+					<div
+						className="fixed inset-0 bg-black/50"
+						aria-hidden="true"
+					/>
+					<Transition.Child
+						as={Fragment}
+						enter="ease-out duration-300"
+						enterFrom="translate-x-full"
+						enterTo="translate-x-0"
+						leave="ease-out duration-300"
+						leaveFrom="translate-x-0"
+						leaveTo="translate-x-full"
+					>
+						<div className="fixed inset-y-0 right-0 flex items-center justify-center">
+							<Dialog.Panel className="h-screen w-[320px] bg-white">
+								<img
+									src="/images/cidi-logo.png"
+									alt="company logo"
+									className="pl-4 w-20 lg:w-auto h-auto lg:h-auto py-4 lg:py-0"
+								/>
+
+								<div className="ml-auto overflow-auto flex flex-col w-full 2lg:hidden items-center">
+									{navLinks.map((nav, index) => (
+										<Fragment key={index}>
+											{nav.multiple ? (
+												<Menu key={index}>
+													{({ open }) => (
+														<>
+															<Menu.Button
+																className={`w-full py-2 px-4 border hover:text-greenPrimary font-medium focus:outline-none flex items-center justify-between ${
+																	open ||
+																	nav.links?.some(
+																		(el) =>
+																			el.link ===
+																			pathname
+																	)
+																		? "text-greenPrimary"
+																		: "text-bluePrimary"
+																} duration-300`}
+															>
+																<span>
+																	{nav.name}
+																</span>
+																<BsChevronDown
+																	className={`ml-2 duration-300 ${
+																		open
+																			? "rotate-180"
+																			: "rotate-0"
+																	}`}
+																/>
+															</Menu.Button>
+															<Transition
+																as={Fragment}
+																enter="transition duration-100 ease-out"
+																enterFrom="transform scale-95 opacity-0"
+																enterTo="transform scale-100 opacity-100"
+																leave="transition duration-75 ease-out"
+																leaveFrom="transform scale-100 opacity-100"
+																leaveTo="transform scale-95 opacity-0"
+															>
+																<Menu.Items className="z-10 w-full">
+																	<div className="bg-white w-full border flex flex-col items-start divide-y">
+																		{nav.links?.map(
+																			(
+																				link,
+																				index
+																			) => (
+																				<NavLink
+																					key={
+																						index
+																					}
+																					end={
+																						link.end
+																					}
+																					to={
+																						link.link ||
+																						"/"
+																					}
+																					className={({
+																						isActive,
+																					}) =>
+																						`hover:text-greenPrimary font-medium text-bluePrimary hover:bg-[#eee] px-8 py-2 w-full ${
+																							isActive &&
+																							"bg-[#eee] text-bluePrimary"
+																						}`
+																					}
+																				>
+																					{
+																						link.name
+																					}
+																				</NavLink>
+																			)
+																		)}
+																	</div>
+																</Menu.Items>
+															</Transition>
+														</>
+													)}
+												</Menu>
+											) : (
+												<NavLink
+													key={index}
+													to={nav.link || "/"}
+													end={nav.end}
+													className={({ isActive }) =>
+														`w-full py-2 px-4 border hover:text-greenPrimary font-medium text-bluePrimary ${
+															isActive &&
+															"text-greenPrimary"
+														}`
+													}
+												>
+													{nav.name}
+												</NavLink>
+											)}
+										</Fragment>
+									))}
+									<Link
+										className="font-medium bg-bluePrimary w-full hover:bg-greenPrimary duration-300 py-2 px-6 text-center text-white"
+										to="/register"
+									>
+										Register
+									</Link>
+								</div>
+							</Dialog.Panel>
+						</div>
+					</Transition.Child>
+				</Dialog>
+			</Transition>
+
 			<div>
-				<div className="pr-[calc(((100vw-1222px)/2))]">
+				<div className="hidden lg:block pr-[calc(((100vw-1222px)/2))]">
 					<div className="pr-4 pl-12 py-3 flex items-center space-x-6">
 						{topInfor.map((infor, index) => (
 							<div
@@ -38,7 +188,10 @@ const Header: FC<IHeader> = () => {
 								</div>
 							</div>
 						))}
-						<Link to="/volunteer" className="flex items-center space-x-3">
+						<Link
+							to="/volunteer"
+							className="flex items-center space-x-3"
+						>
 							<img
 								src="/images/svgs/volunteer-infor.svg"
 								alt="volunteer"
@@ -51,8 +204,8 @@ const Header: FC<IHeader> = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="pr-[calc(((100vw-1222px)/2))] bg-darkBlue rounded-tl-[30px]">
-					<div className="pr-4 pl-12 py-2 space-x-6 flex items-center">
+				<div className="hidden lg:block pr-[calc(((100vw-1222px)/2))] bg-darkBlue rounded-tl-[30px]">
+					<div className="pr-4 pl-12 py-2 space-x-6 flex items-center justify-between">
 						{navLinks.map((link, index) => (
 							<Fragment key={index}>
 								{link.multiple ? (
