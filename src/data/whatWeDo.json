@@ -1,0 +1,23 @@
+[
+	{
+		"icon": "/images/svgs/life.svg",
+		"name": "Agriculture/Livestock",
+		"description": "Small Description with BG Picture",
+		"link": "/projects/agriculture",
+		"highlight": false
+	},
+	{
+		"icon": "/images/svgs/education.svg",
+		"name": "Education",
+		"description": "Small Description with BG Picture",
+		"link": "/projects/education",
+		"highlight": true
+	},
+	{
+		"icon": "/images/svgs/drop.svg",
+		"name": "Water, sanitation & hygiene",
+		"description": "Small Description with BG Picture",
+		"link": "/projects/water-sanitation",
+		"highlight": false
+	}
+]

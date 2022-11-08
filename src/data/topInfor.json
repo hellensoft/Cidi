@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Helpline",
+		"infor": "+255 787 177 992",
+		"icon": "/images/svgs/phone-infor.svg"
+	},
+	{
+		"name": "Send Email",
+		"infor": "info@cidi.co.tz",
+		"icon": "/images/svgs/email-infor.svg"
+	},
+	{
+		"name": "Mikocheni",
+		"infor": "Dar es Salaam, Tanzania",
+		"icon": "/images/svgs/location-infor.svg"
+	}
+]
