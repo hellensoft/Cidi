@@ -20,7 +20,7 @@ const About: FC<IAbout> = () => {
 		<div>
 			<PageIntro name="About Us" />
 			<SectionWrapper>
-				<div className="grid grid-cols-2 gap-16 place-items-center mb-24">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center mb-24">
 					<div>
 						<h2 className="text-darkBlue text-2xl font-semibold">
 							Who We Are
@@ -47,14 +47,14 @@ const About: FC<IAbout> = () => {
 							</p>
 						</div>
 					</div>
-					<div className="relative aspect-square w-full h-auto">
+					<div className="hidden md:inline-block relative aspect-square w-full h-auto">
 						<img
 							className="absolute top-0 right-0"
 							src="/images/plantations.png"
 							alt="plants"
 						/>
 						<img
-							className="absolute bottom-0 left-0"
+							className="hidden lg:inline-block absolute bottom-0 left-0"
 							src="/images/cows.png"
 							alt="plants"
 						/>
@@ -63,15 +63,15 @@ const About: FC<IAbout> = () => {
 			</SectionWrapper>
 			<div className="bg-sectionGray">
 				<SectionWrapper>
-					<div className="grid grid-cols-2 gap-16 place-items-center py-24">
-						<div className="relative aspect-square w-full h-auto">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center py-24">
+						<div className="hidden md:inline-block relative aspect-square w-full h-auto">
 							<img
 								className="absolute top-0 left-0"
 								src="/images/planting.png"
 								alt="plants"
 							/>
 							<img
-								className="absolute bottom-0 right-0"
+								className="hidden lg:inline-block absolute bottom-0 right-0"
 								src="/images/learning.png"
 								alt="plants"
 							/>
@@ -98,24 +98,27 @@ const About: FC<IAbout> = () => {
 					</div>
 				</SectionWrapper>
 			</div>
-			<div className="max-w-[806px] mx-auto bg-darkBlue text-center py-12 px-6 rounded-[10px] my-28">
-				<h1 className="text-white text-[34px] font-semibold mb-4">
-					Mission and Vision
-				</h1>
-				<p className="text-lightText text-[15px] max-w-[668px] leading-[27px] mx-auto">
-					The organization shall be voluntary, consultative,
-					non-government, non-political and non-profit making with the
-					sole focus on the growth and development in improving the
-					quality of life to all it serves through participatory
-					approach on different development initiatives of Tanzania.
-				</p>
+			<div className="px-4">
+				<div className="max-w-[806px] mx-auto bg-darkBlue text-center py-12 px-6 rounded-[10px] my-28">
+					<h1 className="text-white text-[34px] font-semibold mb-4">
+						Mission and Vision
+					</h1>
+					<p className="text-lightText text-[15px] max-w-[668px] leading-[27px] mx-auto">
+						The organization shall be voluntary, consultative,
+						non-government, non-political and non-profit making with
+						the sole focus on the growth and development in
+						improving the quality of life to all it serves through
+						participatory approach on different development
+						initiatives of Tanzania.
+					</p>
+				</div>
 			</div>
 			<SectionWrapper>
 				<div>
 					<h2 className="text-darkBlue text-2xl font-semibold">
 						Core Values
 					</h2>
-					<div className="ml-16 mt-6">
+					<div className="ml-0 sm:ml-16 mt-6">
 						<p className="text-textGray">
 							To improve living standards of community members
 							through improved livelihoods, promote availability
@@ -152,16 +155,16 @@ const About: FC<IAbout> = () => {
 					<h2 className="text-center text-darkBlue text-2xl font-semibold">
 						Our Team
 					</h2>
-					<div className="grid grid-cols-3 gap-12 mt-12">
+					<div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-6 md:gap-12 mt-12">
 						{team.map((member, index) => (
 							<div
-								className="relative group aspect-[274/330] w-full flex items-end"
+								className="relative group aspect-[274/330] w-full bg-center bg-cover flex items-end"
 								key={index}
 								style={{
 									backgroundImage: `url(${member.image})`,
 								}}
 							>
-								<div className="hidden group-hover:inline-block duration-300 w-full aspect-[274/211] bg-[linear-gradient(180deg,_rgba(58,65,84,0)_0%,_rgba(58,65,84,0.69)_54.19%,_#3A4154_100%)]">
+								<div className="inline-block sm:hidden sm:group-hover:inline-block duration-300 w-full aspect-[274/211] bg-[linear-gradient(180deg,_rgba(58,65,84,0)_0%,_rgba(58,65,84,0.69)_54.19%,_#3A4154_100%)]">
 									<div className="px-4 pb-8 flex items-start h-full justify-end flex-col">
 										<h2 className="text-white text-2xl font-semibold">
 											{member.name}

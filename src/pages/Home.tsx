@@ -6,7 +6,6 @@ import services from "../data/whatWeDo.json";
 import { BsArrowRight } from "react-icons/bs";
 import Testimony from "../components/Testimony";
 import HomeIntro from "../components/HomeIntro";
-import NewsBanner from "../components/NewsBanner";
 
 interface IHome {}
 
@@ -16,7 +15,7 @@ const Home: FC<IHome> = () => {
 			<HomeIntro />
 			{/* <NewsBanner /> */}
 			<SectionWrapper>
-				<div className="grid grid-cols-2 gap-16 place-items-center my-28">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center my-28">
 					<div>
 						<h2 className="text-darkBlue text-2xl font-semibold">
 							Who We Are?
@@ -49,14 +48,14 @@ const Home: FC<IHome> = () => {
 							</Link>
 						</div>
 					</div>
-					<div className="relative aspect-square w-full h-auto">
+					<div className="hidden md:inline-block relative aspect-square w-full h-auto">
 						<img
-							className="absolute top-0 right-0 w-[460px] h-auto"
+							className="absolute top-0 right-0 w-96 lg:w-[460px] h-auto"
 							src="/images/class.png"
 							alt="plants"
 						/>
 						<img
-							className="absolute bottom-16 w-[320px] h-auto left-0"
+							className="absolute bottom-0 lg:bottom-16 w-56 lg:w-[320px] h-auto left-0"
 							src="/images/planting.png"
 							alt="plants"
 						/>
@@ -74,11 +73,11 @@ const Home: FC<IHome> = () => {
 								What we Do
 							</h2>
 						</div>
-						<div className="grid grid-cols-3 gap-8 my-16">
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-16">
 							{services.map((service, index) => (
 								<div
 									key={index}
-									className={`flex items-start space-x-6 p-9 ${
+									className={`flex items-start space-x-6 hover:bg-white p-9 hover:shadow-[0px_12px_24px_rgba(0,0,0,0.05)] duration-150 ${
 										service.highlight &&
 										"bg-white shadow-[0px_12px_24px_rgba(0,0,0,0.05)]"
 									}`}
@@ -89,7 +88,7 @@ const Home: FC<IHome> = () => {
 										alt={service.name}
 									/>
 									<div>
-										<h2 className="text-darkBlue text-xl font-semibold">
+										<h2 className="text-darkBlue text-lg sm:text-xl font-semibold">
 											{service.name}
 										</h2>
 										<p className="text-[15px] text-textBlue mt-4 mb-6">

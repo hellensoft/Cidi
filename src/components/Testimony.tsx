@@ -29,7 +29,19 @@ const Testimony: FC<ITestimony> = () => {
 						nextEl,
 					}}
 					spaceBetween={48}
-					slidesPerView={3}
+					breakpoints={{
+						640: {
+							// width: 640,
+							slidesPerView: 1,
+						},
+						768: {
+							// width: 768,
+							slidesPerView: 2,
+						},
+						1024: {
+							slidesPerView: 3,
+						},
+					}}
 					className=""
 				>
 					{testimonies.map((testimony, index) => (

@@ -11,7 +11,7 @@ const Agriculture: FC<IAgriculture> = () => {
 			<PageIntro name="Miswe Livestock and Crop Production Project" />
 			<SectionWrapper>
 				<div>
-					<div className="grid grid-cols-2 gap-12">
+					<div className="grid xs:grid-cols-2 gap-12">
 						<img
 							src="/images/agriculture-1.png"
 							alt="agriculture images"
@@ -19,6 +19,7 @@ const Agriculture: FC<IAgriculture> = () => {
 						<img
 							src="/images/agriculture-2.png"
 							alt="agriculture images"
+                            className="hidden xs:inline-block"
 						/>
 					</div>
 					<p className="text-textBlue mt-16 max-w-[1096px]">
@@ -46,8 +47,8 @@ const Agriculture: FC<IAgriculture> = () => {
 						self-insurance considerations are also important
 						impediments.
 					</p>
-					<div className="grid grid-cols-2 gap-24 place-items-center my-28">
-						<div className="aspect-square w-full h-auto">
+					<div className="grid xs:grid-cols-2 gap-8 sm:gap-24 place-items-center my-0 xs:my-28">
+						<div className="hidden xs:inline-block aspect-square w-full h-auto">
 							<img
 								className="w-full h-auto"
 								src="/images/agriculture-3.png"
@@ -62,7 +63,7 @@ const Agriculture: FC<IAgriculture> = () => {
 							</p>
 						</div>
 					</div>
-					<div className="grid grid-cols-2 gap-24 place-items-center my-28">
+					<div className="grid xs:grid-cols-2 gap-8 sm:gap-24 place-items-center my-0 xs:my-28">
 						<div>
 							<p className="text-textBlue mt-6 mb-16 max-w-[1096px]">
 								We find that general agriculture productivity
@@ -72,7 +73,7 @@ const Agriculture: FC<IAgriculture> = () => {
 								best practice in different regions
 							</p>
 						</div>
-						<div className="aspect-square ml-12 w-full h-auto">
+						<div className="hidden xs:inline-block aspect-square w-full h-auto">
 							<img
 								className="w-full h-auto"
 								src="/images/agriculture-3.png"
