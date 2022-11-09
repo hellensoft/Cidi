@@ -11,22 +11,22 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 		<div>
 			<PageIntro name="Water, Sanitation and Hygiene" />
 			<SectionWrapper>
-				<div className="grid grid-cols-[500px_1fr] gap-8 place-items-center">
+				<div className="grid md:grid-cols-2 lg:grid-cols-[500px_1fr] gap-8 place-items-center">
 					<div>
 						<img
 							src="/images/sanitation-image.png"
 							alt="section sanitation"
 						/>
 					</div>
-					<div className="space-y-8 ml-12">
-						<p className="text-justify text-xl text-textGray font-semibold">
+					<div className="space-y-8 lg:ml-12">
+						<p className="text-justify text-base md:text-xl text-textGray font-semibold">
 							CIDI and Wash africa came together to make CIDI-
 							Wash with a sole purpose of to creating a strong
 							non-governmental organization that will coordinate
 							volunteer projects for the forgotten community
 							especially children, youths, women and the elderly.
 						</p>
-						<p className="text-justify text-xl text-textGray font-semibold">
+						<p className="text-justify text-base md:text-xl text-textGray font-semibold">
 							The projects that will be involved include
 							education, environment, agriculture, clean and safe
 							water, hygiene as well as sustainable energy.
@@ -34,10 +34,10 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 					</div>
 				</div>
 				<div className="py-32 max-w-[1095px]">
-					<h1 className="text-darkBlue max-w-[485px] font-semibold text-[36px] mb-6">
+					<h1 className="text-darkBlue max-w-[485px] font-semibold text-2xl sm:text-[36px] mb-6">
 						CIDI-WASH Africa on COVID-19
 					</h1>
-					<p className="text-justify text-xl text-textGray">
+					<p className="text-justify text-base md:text-xl text-textGray">
 						Well-positioned to help communities respond to the
 						COVID-19 crisis and become more resilient. We act
 						quickly with customized approaches considering the
@@ -46,7 +46,7 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 						messages, bringing key sanitation and hygiene messages
 						to urban populations whose,
 					</p>
-					<p className="text-justify text-xl text-textGray my-5">
+					<p className="text-justify text-base md:text-xl text-textGray my-5">
 						<span className="text-darkBlue font-semibold">
 							WASH-Africa
 						</span>{" "}
@@ -58,26 +58,26 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 						Covid-19 Behavior Change Communication (BCC) strategy
 						includes,
 					</p>
-					<ul className="list-disc ml-16 space-y-6 mt-10">
-						<li className="text-justify text-xl text-textGray">
+					<ul className="list-disc ml-8 sm:ml-16 space-y-6 mt-10">
+						<li className="text-justify text-base md:text-xl text-textGray">
 							Tailoring messages based on formative research
 							results and behavior centred design principles to
 							promote hand hygiene, surface cleanliness, wearing a
 							mask. and social distancing.
 						</li>
-						<li className="text-justify text-xl text-textGray">
+						<li className="text-justify text-base md:text-xl text-textGray">
 							Communicating messages through diverse channels,
 							innovatively linking interventions and carefully
 							considering outreach, unequal digital access, and
 							capabilities based on gender, poverty, and
 							disability identifiers.
 						</li>
-						<li className="text-justify text-xl text-textGray">
+						<li className="text-justify text-base md:text-xl text-textGray">
 							Promoting the rollout of cost-effective and durable
 							handwashing and hygiene supplies, with preference to
 							engage local service providers, and
 						</li>
-						<li className="text-justify text-xl text-textGray">
+						<li className="text-justify text-base md:text-xl text-textGray">
 							Monitoring outreach, recall of messages, and
 							behavioral change.
 						</li>

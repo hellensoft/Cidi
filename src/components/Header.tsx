@@ -1,4 +1,4 @@
-import { FC, Fragment, useState } from "react";
+import { FC, Fragment, useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import navLinks from "../data/topNav.json";
 import topInfor from "../data/topInfor.json";
@@ -13,6 +13,10 @@ interface IHeader {}
 const Header: FC<IHeader> = () => {
 	const { pathname } = useLocation();
 	const [openSideBar, setOpenSideBar] = useState(false);
+
+	useEffect(() => {
+		setOpenSideBar(false);
+	}, [pathname]);
 
 	return (
 		<div className="flex items-center justify-between bg-white shadow-[0px_12px_24px_rgba(0,0,0,0.04)]">
