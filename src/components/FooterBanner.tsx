@@ -13,7 +13,7 @@ const FoooterBanner: FC<IFoooterBanner> = ({ text }) => {
 				<h2 className="text-white text-lg md:text-2xl font-semibold">{text}</h2>
 				<Link
 					to="/donation"
-					className="bg-greenPrimary inline-block hover:bg-darkBlue duration-150 rounded-[5px] py-4 text-white font-medium px-6 lg:px-9 h-full border border-greenPrimary"
+					className="bg-greenPrimary inline-block hover:bg-darkBlue duration-150 py-2 sm:py-4 text-white font-medium px-6 lg:px-9 h-full border border-greenPrimary"
 				>
 					Donate now
 				</Link>
