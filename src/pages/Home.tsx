@@ -15,10 +15,10 @@ const Home: FC<IHome> = () => {
 			<HomeIntro />
 			{/* <NewsBanner /> */}
 			<SectionWrapper>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center my-28">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center my-10">
 					<div>
 						<h2 className="text-darkBlue text-2xl font-semibold">
-							Who We Are?
+							Who We Are
 						</h2>
 						<div className="my-6 space-y-8">
 							<p className="text-textGray text-sm leading-[27px]">
@@ -42,23 +42,15 @@ const Home: FC<IHome> = () => {
 							</p>
 							<Link
 								to="/about"
-								className="bg-greenPrimary inline-block hover:bg-darkBlue duration-150 rounded-[5px] py-4 text-white font-medium px-6 sm:px-12 h-full border border-greenPrimary"
+								className="bg-greenPrimary inline-block hover:bg-darkBlue duration-150 py-4 text-white font-medium px-6 sm:px-12 h-full border border-greenPrimary"
 							>
 								Know More
 							</Link>
 						</div>
 					</div>
-					<div className="hidden md:inline-block relative aspect-square w-full h-auto">
-						<img
-							className="absolute top-0 right-0 w-96 lg:w-[460px] h-auto"
-							src="/images/class.png"
-							alt="plants"
-						/>
-						<img
-							className="absolute bottom-0 lg:bottom-16 w-56 lg:w-[320px] h-auto left-0"
-							src="/images/planting.png"
-							alt="plants"
-						/>
+					<div className="relative aspect-square w-full h-auto">
+						<img src="/images/owners.jpg" alt="owners" />
+                        <div className="hidden lg:inline-block w-full h-[400px] absolute bg-darkBlue bottom-24 -right-10 -z-10"></div>
 					</div>
 				</div>
 			</SectionWrapper>
