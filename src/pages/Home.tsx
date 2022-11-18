@@ -15,8 +15,12 @@ const Home: FC<IHome> = () => {
 			<HomeIntro />
 			{/* <NewsBanner /> */}
 			<SectionWrapper>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center my-10">
-					<div>
+				<div
+					className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center my-10"
+					data-aos="fade-up"
+					data-aos-duration="1000"
+				>
+					<div data-aos="fade-up" data-aos-duration="1000">
 						<h2 className="text-darkBlue text-2xl font-semibold">
 							Who We Are
 						</h2>
@@ -48,16 +52,24 @@ const Home: FC<IHome> = () => {
 							</Link>
 						</div>
 					</div>
-					<div className="relative aspect-square w-full h-auto">
+					<div
+						data-aos="fade-up"
+						data-aos-duration="2000"
+						className="relative aspect-square w-full h-auto"
+					>
 						<img src="/images/owners.jpg" alt="owners" />
-                        <div className="hidden lg:inline-block w-full h-[400px] absolute bg-darkBlue bottom-24 -right-10 -z-10"></div>
+						<div className="hidden lg:inline-block w-full h-[400px] absolute bg-darkBlue bottom-24 -right-10 -z-10"></div>
 					</div>
 				</div>
 			</SectionWrapper>
 			<div className="bg-sectionGray py-28">
 				<SectionWrapper>
 					<div>
-						<div className="text-center space-y-2">
+						<div
+							className="text-center space-y-2"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+						>
 							<p className="text-[15px] text-textBlue">
 								Our Services
 							</p>
@@ -65,7 +77,11 @@ const Home: FC<IHome> = () => {
 								What we Do
 							</h2>
 						</div>
-						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-16">
+						<div
+							className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-16"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+						>
 							{services.map((service, index) => (
 								<div
 									key={index}
@@ -97,7 +113,11 @@ const Home: FC<IHome> = () => {
 								</div>
 							))}
 						</div>
-						<div className="flex items-center justify-center">
+						<div
+							className="flex items-center justify-center"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+						>
 							<Link
 								to="#"
 								className="bg-greenPrimary inline-block hover:bg-darkBlue duration-150 rounded-[5px] py-4 text-white font-medium px-6 sm:px-12 h-full border border-greenPrimary"

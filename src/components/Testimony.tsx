@@ -17,7 +17,11 @@ const Testimony: FC<ITestimony> = () => {
 	return (
 		<SectionWrapper>
 			<div className="my-24">
-				<div className="text-center space-y-2">
+				<div
+					className="text-center space-y-2"
+					data-aos="fade-up"
+					data-aos-duration="1000"
+				>
 					<p className="text-[15px] text-textBlue">Feedback</p>
 					<h2 className="text-darkBlue text-2xl font-semibold">
 						Volunteer Testimonials.
@@ -43,6 +47,8 @@ const Testimony: FC<ITestimony> = () => {
 						},
 					}}
 					className=""
+					data-aos="fade-up"
+					data-aos-duration="1000"
 				>
 					{testimonies.map((testimony, index) => (
 						<SwiperSlide

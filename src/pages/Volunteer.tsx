@@ -9,7 +9,7 @@ const Volunteer: FC<IVolunteer> = () => {
 	return (
 		<div>
 			<PageIntro name="Volunteer Form" />
-			<div className="px-4">
+			<div className="px-4" data-aos="fade-up" data-aos-duration="1000">
 				<div className="max-w-[1037px] bg-sectionGray border rounded px-6 md:px-12 py-6 md:py-16 sm:-mt-12 mx-auto">
 					<Formik
 						initialValues={{

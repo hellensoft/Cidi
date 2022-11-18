@@ -32,7 +32,11 @@ const HomeIntro: FC<IHomeIntro> = () => {
 							style={{ backgroundImage: `url(${intro.bgImage})` }}
 						>
 							<div className="pl-[calc(((100vw-1222px)/2))] min-h-[calc(90vh-56px)] md:min-h-[70vh] pb-28 flex flex-col items-start justify-center lg:max-w-[calc(100vw)] bg-[linear-gradient(92.55deg,_rgba(0,0,0,0.5)_9.84%,_rgba(0,0,0,0.5)_77.03%,_rgba(0,0,0,0.5)_97.9%)]">
-								<div className="px-4 max-w-[602px]">
+								<div
+									className="px-4 max-w-[602px]"
+									data-aos="fade-right"
+									data-aos-duration="1000"
+								>
 									<h1 className="text-white text-3xl md:text-[44px] font-semibold">
 										{intro.title}
 									</h1>
@@ -56,7 +60,11 @@ const HomeIntro: FC<IHomeIntro> = () => {
 								</div>
 							</div>
 						</div>
-						<div className="z-30">
+						<div
+							className="z-30"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+						>
 							<SectionWrapper>
 								<div className="bg-darkBlue -mt-14 mb-20 md:flex  md:flex-row space-y-2 md:space-y-0 items-start md:items-center justify-start px-6 sm:px-12 lg:px-28 py-6 rounded-tl-[45px] shadow-[0px_15px_44px_rgba(0,122,255,0.15)] rounded-br-[45px]">
 									<div className="w-[220px]">
@@ -78,7 +86,7 @@ const HomeIntro: FC<IHomeIntro> = () => {
 											crossFade: true,
 										}}
 										allowTouchMove={false}
-                                        className='md:flex-1'
+										className="md:flex-1"
 									>
 										{newsData.map((news, index) => (
 											<SwiperSlide key={index}>

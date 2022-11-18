@@ -20,7 +20,11 @@ const About: FC<IAbout> = () => {
 		<div>
 			<PageIntro name="About Us" />
 			<SectionWrapper>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center mb-24">
+				<div
+					className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center mb-24"
+					data-aos="fade-up"
+					data-aos-duration="1000"
+				>
 					<div>
 						<h2 className="text-darkBlue text-2xl font-semibold">
 							Who We Are
@@ -47,7 +51,11 @@ const About: FC<IAbout> = () => {
 							</p>
 						</div>
 					</div>
-					<div className="hidden md:inline-block relative aspect-square w-full h-auto">
+					<div
+						className="hidden md:inline-block relative aspect-square w-full h-auto"
+						data-aos="fade-up"
+						data-aos-duration="2000"
+					>
 						<img
 							className="absolute top-0 right-0"
 							src="/images/plantations.png"
@@ -63,7 +71,11 @@ const About: FC<IAbout> = () => {
 			</SectionWrapper>
 			<div className="bg-sectionGray">
 				<SectionWrapper>
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center py-24">
+					<div
+						className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center py-24"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
 						<div className="hidden md:inline-block relative aspect-square w-full h-auto">
 							<img
 								className="absolute top-0 left-0"
@@ -76,7 +88,7 @@ const About: FC<IAbout> = () => {
 								alt="plants"
 							/>
 						</div>
-						<div>
+						<div data-aos="fade-up" data-aos-duration="2000">
 							<h2 className="text-darkBlue text-2xl font-semibold">
 								Who We Are?
 							</h2>
@@ -98,7 +110,7 @@ const About: FC<IAbout> = () => {
 					</div>
 				</SectionWrapper>
 			</div>
-			<div className="px-4">
+			<div className="px-4" data-aos="fade-up" data-aos-duration="1000">
 				<div className="max-w-[806px] mx-auto bg-darkBlue text-center py-12 px-6 rounded-[10px] my-28">
 					<h1 className="text-white text-[34px] font-semibold mb-4">
 						Mission and Vision
@@ -114,7 +126,7 @@ const About: FC<IAbout> = () => {
 				</div>
 			</div>
 			<SectionWrapper>
-				<div>
+				<div data-aos="fade-up" data-aos-duration="1000">
 					<h2 className="text-darkBlue text-2xl font-semibold">
 						Core Values
 					</h2>
@@ -151,11 +163,19 @@ const About: FC<IAbout> = () => {
 						</ul>
 					</div>
 				</div>
-				<div className="my-28 max-w-[910px] mx-auto">
+				<div
+					className="my-28 max-w-[910px] mx-auto"
+					data-aos="fade-up"
+					data-aos-duration="1000"
+				>
 					<h2 className="text-center text-darkBlue text-2xl font-semibold">
 						Our Team
 					</h2>
-					<div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-6 md:gap-12 mt-12">
+					<div
+						className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-6 md:gap-12 mt-12"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
 						{team.map((member, index) => (
 							<div
 								className="relative group aspect-[274/330] w-full bg-center bg-cover flex items-end"

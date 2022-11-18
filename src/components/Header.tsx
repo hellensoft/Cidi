@@ -50,13 +50,15 @@ const Header: FC<IHeader> = () => {
 		<div className="fixed w-screen z-50">
 			<div className="flex items-center z-50 justify-between bg-white shadow-[0px_12px_24px_rgba(0,0,0,0.04)]">
 				<div className="pl-[calc(((100vw-1222px)/2))]">
-					<img
-						src="/images/cidi-logo.png"
-						alt="company logo"
-						className={`pl-4 duration-200 ${
-							scrolled ? "w-12 lg:w-20" : "w-16 lg:w-auto"
-						} h-auto lg:h-auto py-4 lg:py-0`}
-					/>
+					<Link to="/">
+						<img
+							src="/images/cidi-logo.png"
+							alt="company logo"
+							className={`pl-4 duration-200 ${
+								scrolled ? "w-12 lg:w-20" : "w-16 lg:w-auto"
+							} h-auto lg:h-auto py-4 lg:py-0`}
+						/>
+					</Link>
 				</div>
 				<button
 					onClick={() => setOpenSideBar(!openSideBar)}
@@ -88,12 +90,12 @@ const Header: FC<IHeader> = () => {
 							leaveFrom="translate-x-0"
 							leaveTo="translate-x-full"
 						>
-							<div className="fixed inset-y-0 right-0 flex items-center justify-center">
-								<Dialog.Panel className="h-screen w-[320px] bg-white">
+							<div className="fixed inset-y-0 right-0 flex items-center z-50 justify-center">
+								<Dialog.Panel className="h-screen w-screen bg-white">
 									<img
 										src="/images/cidi-logo.png"
 										alt="company logo"
-										className="pl-4 w-20 lg:w-auto h-auto lg:h-auto py-4 lg:py-0"
+										className="pl-4 w-20 lg:w-auto h-auto lg:h-auto py-2 lg:py-0"
 									/>
 
 									<div className="ml-auto overflow-auto flex flex-col w-full 2lg:hidden items-center">

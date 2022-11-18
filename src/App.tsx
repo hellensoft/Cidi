@@ -10,6 +10,8 @@ import Agriculture from "./pages/projects/Agriculture";
 import Education from "./pages/projects/Education";
 import WaterSanitation from "./pages/projects/WaterSanitation";
 import Volunteer from "./pages/Volunteer";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 interface IApp {}
 
@@ -17,6 +19,7 @@ const App: FC<IApp> = () => {
 	const location = useLocation();
 
 	useEffect(() => {
+        AOS.init()
 		window.scrollTo(0, 0);
 	}, [location]);
 

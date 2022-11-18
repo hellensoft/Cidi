@@ -7,8 +7,16 @@ const WaterInvolved: FC<IWaterInvolved> = () => {
 		<>
 			<div className="pt-12">
 				<div className="relative bg-white py-16 sm:py-20">
-					<div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
-						<div className="relative sm:py-16 lg:py-0">
+					<div
+						className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
+						<div
+							className="relative sm:py-16 lg:py-0"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+						>
 							<div
 								aria-hidden="true"
 								className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
@@ -120,22 +128,14 @@ const WaterInvolved: FC<IWaterInvolved> = () => {
 					</div>
 				</div>
 			</div>
-
-			{/* “”
-¬	
-¬	
-¬	
-¬	
-¬	
-¬	
-¬	
-¬	
-¬	 */}
-
 			<div className="">
 				<div className="relative bg-white">
 					<div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
-						<div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+						<div
+							className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+						>
 							{/* Content area */}
 							<div className="pt-12 sm:pt-16 lg:pt-20">
 								<h2 className="text-xl font-bold tracking-tight text-blackPrimary sm:text-2xl">
@@ -177,7 +177,11 @@ const WaterInvolved: FC<IWaterInvolved> = () => {
 							</div>
 						</div>
 
-						<div className="relative sm:py-16 lg:py-0 hidden lg:inline-block">
+						<div
+							className="relative sm:py-16 lg:py-0 hidden lg:inline-block"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+						>
 							<div
 								aria-hidden="true"
 								className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
