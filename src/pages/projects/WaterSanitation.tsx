@@ -1,9 +1,11 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
+import Faqs from "../../components/Faqs";
 import FoooterBanner from "../../components/FooterBanner";
 import PageIntro from "../../components/PageIntro";
 import SectionWrapper from "../../components/SectionWrapper";
 import WaterInvolved from "../../components/WaterInvolved";
+import washFaqs from "../../data/washFaq.json";
 
 interface IWaterSanitation {}
 
@@ -12,8 +14,12 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 		<div>
 			<PageIntro name="Water, Sanitation and Hygiene" />
 			<SectionWrapper>
-				<div className="grid md:grid-cols-2 lg:grid-cols-[500px_1fr] gap-8 place-items-center">
-					<div>
+				<div
+					className="grid md:grid-cols-2 lg:grid-cols-[500px_1fr] gap-8 place-items-center"
+					data-aos="fade-up"
+					data-aos-duration="1000"
+				>
+					<div data-aos="fade-up" data-aos-duration="1000">
 						<img
 							src="/images/sanitation-image.png"
 							alt="section sanitation"
@@ -46,7 +52,11 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 						</p>
 					</div>
 				</div>
-				<div className="pt-32">
+				<div
+					className="pt-32"
+					data-aos="fade-up"
+					data-aos-duration="1000"
+				>
 					<h1 className="text-darkBlue max-w-[485px] font-semibold text-2xl sm:text-[36px] mb-6">
 						CIDI-WASH Africa on COVID-19
 					</h1>
@@ -71,7 +81,11 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 						Covid-19 Behavior Change Communication (BCC) strategy
 						includes,
 					</p>
-					<ul className="list-disc ml-8 sm:ml-16 space-y-6 mt-10">
+					<ul
+						className="list-disc ml-8 sm:ml-16 space-y-6 mt-10"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
 						<li className="text-justify text-base md:text-md text-textGray">
 							Tailoring messages based on formative research
 							results and behavior centred design principles to
@@ -96,14 +110,17 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 						</li>
 					</ul>
 					<Link
+						data-aos="fade-up"
+						data-aos-duration="1000"
 						to="#"
-						className="bg-greenPrimary inline-block hover:bg-darkBlue duration-150 rounded-[5px] py-4 text-white font-medium px-6 sm:px-9 h-full border mt-20 border-greenPrimary"
+						className="bg-greenPrimary inline-block hover:bg-darkBlue duration-150 py-4 text-white font-medium px-6 sm:px-9 h-full border mt-20 border-greenPrimary"
 					>
 						About Wash-Africa
 					</Link>
 				</div>
-                <WaterInvolved />
+				<WaterInvolved />
 			</SectionWrapper>
+            <Faqs faqs={washFaqs} />
 			<FoooterBanner text="Help us Improve water hygiene and sanitation" />
 		</div>
 	);

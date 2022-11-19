@@ -14,7 +14,7 @@ const Faqs: FC<IFaqs> = ({ faqs, titlePosition = "center" }) => {
 	const [opened, setOpened] = useState<number | null>(null);
 
 	return (
-		<div className="my-28">
+		<div className="my-28" data-aos="fade-up" data-aos-duration="1000">
 			<h2
 				className={`text-${titlePosition} text-darkBlue text-2xl font-semibold`}
 			>

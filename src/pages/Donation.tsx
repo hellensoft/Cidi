@@ -9,7 +9,7 @@ const Donation: FC<IDonation> = () => {
 	return (
 		<div>
 			<PageIntro name="Donation Form" />
-			<div className="px-4">
+			<div className="px-4" data-aos="fade-up" data-aos-duration="1000">
 				<div className="max-w-[1037px] bg-sectionGray border rounded px-6 md:px-12 py-6 md:py-16 sm:-mt-12 mx-auto">
 					<Formik
 						initialValues={{
@@ -206,7 +206,7 @@ const Donation: FC<IDonation> = () => {
 								placeholder="Postal / Zip code"
 								className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 							/>
-							<div className="pt-12 flex justify-center">
+							<div className="pt-12 flex justify-center" data-aos="fade-up" data-aos-duration="1000">
 								<button
 									type="submit"
 									className="bg-greenPrimary hover:bg-darkBlue duration-150 py-4 text-white font-medium px-6 sm:px-16 h-full border border-greenPrimary flex items-center space-x-4"

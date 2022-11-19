@@ -40,7 +40,7 @@ const Footer: FC<IFooter> = () => {
 		<div className="bg-sectionGray pt-36 pb-8 sm:pb-20">
 			<SectionWrapper>
 				<div className="grid grid-cols-1 md:grid-cols-2 mb-8">
-					<div>
+					<div data-aos="fade-right" data-aos-duration="1000">
 						<img src="/images/cidi-logo.png" alt="company logo" />
 						<p className="text-textBlue text-sm md:text-base mt-4 max-w-[516px]">
 							Community Information Development Initiatives (CIDI)
@@ -51,7 +51,9 @@ const Footer: FC<IFooter> = () => {
 							activities.
 						</p>
 					</div>
-					<div className="pl-0 md:pl-16 mt-8 md:mt-24 flex flex-col items-start w-full justify-between">
+					<div
+						className="pl-0 md:pl-16 mt-8 md:mt-24 flex flex-col items-start w-full justify-between"
+					>
 						<Formik
 							initialValues={{
 								email: "",

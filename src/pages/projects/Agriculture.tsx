@@ -1,7 +1,9 @@
 import { FC } from "react";
+import Faqs from "../../components/Faqs";
 import FoooterBanner from "../../components/FooterBanner";
 import PageIntro from "../../components/PageIntro";
 import SectionWrapper from "../../components/SectionWrapper";
+import agriFaq from "../../data/agriFaq.json";
 
 interface IAgriculture {}
 
@@ -11,7 +13,11 @@ const Agriculture: FC<IAgriculture> = () => {
 			<PageIntro name="Miswe Livestock and Crop Production Project" />
 			<SectionWrapper>
 				<div>
-					<div className="grid xs:grid-cols-[5fr_3fr] gap-4">
+					<div
+						className="grid xs:grid-cols-[5fr_3fr] gap-4"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
 						<img
 							src="/images/agriculture-1.png"
 							alt="agriculture images"
@@ -23,7 +29,11 @@ const Agriculture: FC<IAgriculture> = () => {
 							className="hidden xs:inline-block h-full object-cover object-center"
 						/>
 					</div>
-					<p className="text-textBlue mt-16 max-w-[1096px] text-justify mx-auto">
+					<p
+						className="text-textBlue mt-16 max-w-[1096px] text-justify mx-auto"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
 						CIDI’s main objective is to help youth and women in the
 						community to actively participate in initiating,
 						planning and implementing development activities to
@@ -35,7 +45,11 @@ const Agriculture: FC<IAgriculture> = () => {
 						eggplants, and beans are also being produced for the
 						benefit of the surrounding communities.
 					</p>
-					<p className="text-textBlue mt-6 mb-16 max-w-[1096px] text-justify mx-auto">
+					<p
+						className="text-textBlue mt-6 mb-16 max-w-[1096px] text-justify mx-auto"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
 						Analysis of allocative efficiency suggests that family
 						labour is substantially over utilized, a sign of
 						considerable excess labour supply and the use of
@@ -48,7 +62,11 @@ const Agriculture: FC<IAgriculture> = () => {
 						self-insurance considerations are also important
 						impediments.
 					</p>
-					<div className="grid xs:grid-cols-2 gap-8 sm:gap-24 place-items-center my-0 xs:my-28">
+					<div
+						className="grid xs:grid-cols-2 gap-8 sm:gap-24 place-items-center my-0 xs:my-28"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
 						<div className="hidden xs:inline-block aspect-square w-full relative h-auto">
 							<svg
 								className="absolute -z-10 top-0 right-1/2 -ml-3 lg:-left-8 lg:right-auto lg:-top-10"
@@ -123,7 +141,11 @@ const Agriculture: FC<IAgriculture> = () => {
 							</div>
 						</div>
 					</div>
-					<div className="grid xs:grid-cols-2 gap-8 sm:gap-24 place-items-center my-12 xs:my-28">
+					<div
+						className="grid xs:grid-cols-2 gap-8 sm:gap-24 place-items-center my-12 xs:my-28"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
 						<div>
 							<div className="">
 								<h2 className="text-xl font-bold tracking-tight text-blackPrimary sm:text-2xl">
@@ -224,7 +246,11 @@ const Agriculture: FC<IAgriculture> = () => {
 				</div>
 
 				{/* GIVING BACKK TO THE CUSTOMER */}
-				<div className="py-12 max-w-5xl">
+				<div
+					className="py-12 max-w-5xl"
+					data-aos="fade-up"
+					data-aos-duration="1000"
+				>
 					<h1 className="text-2xl sm:text-3xl text-darkBluedark font-semibold">
 						Giving back to the Community
 					</h1>
@@ -232,7 +258,11 @@ const Agriculture: FC<IAgriculture> = () => {
 						CIDI thought of giving back to the community by doing
 						the following: -
 					</p>
-					<ul className="list-disc ml-4 md:ml-16 mt-6 space-y-6 text-gray-500">
+					<ul
+						className="list-disc ml-4 md:ml-16 mt-6 space-y-6 text-gray-500"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
 						<li className="text-sm md:text-base text-justify">
 							CIDI, would work in collaboration with the local
 							community in the implementation of the project.
@@ -265,6 +295,7 @@ const Agriculture: FC<IAgriculture> = () => {
 					</ul>
 				</div>
 			</SectionWrapper>
+            <Faqs faqs={agriFaq} />
 			<FoooterBanner text="Help us Improve  Agriculture Livelihood" />
 		</div>
 	);

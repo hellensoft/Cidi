@@ -17,7 +17,7 @@ const Education: FC<IEducation> = () => {
 			<SectionWrapper>
 				<div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8">
 					<div>
-						<div>
+						<div data-aos="fade-up" data-aos-duration="1000">
 							<img
 								src="/images/education-image-1.png"
 								alt="students at school"
@@ -30,7 +30,11 @@ const Education: FC<IEducation> = () => {
 								barriers to girls’ education and promote gender
 								equality in education.
 							</p>
-							<div className="bg-sectionGray pt-16 pb-8 px-8">
+							<div
+								className="bg-sectionGray pt-16 pb-8 px-8"
+								data-aos="fade-up"
+								data-aos-duration="1000"
+							>
 								<p className="text-darkBlue text-md relative border-l-2 px-3 border-[rgba(17,28,66,0.2)] text-justify">
 									<span className="text-greenPrimary absolute -top-14 text-[64px] left-3">
 										“
@@ -85,7 +89,7 @@ const Education: FC<IEducation> = () => {
 								thus continue widening the gap of inequality in
 								the Country.
 							</p>
-							<div>
+							<div data-aos="fade-up" data-aos-duration="1000">
 								<h2 className="text-darkBlue text-2xl font-semibold mt-16 mb-10">
 									Children and Technology
 								</h2>
@@ -128,11 +132,13 @@ const Education: FC<IEducation> = () => {
 									technology.
 								</p>
 								<img
+									data-aos="fade-up"
+									data-aos-duration="1000"
 									src="/images/education-image-2.png"
 									alt="students at school"
 								/>
 							</div>
-							<div>
+							<div data-aos="fade-up" data-aos-duration="1000">
 								<h2 className="text-darkBlue text-2xl font-semibold mt-16 mb-10">
 									Technology in Schools
 								</h2>
@@ -148,8 +154,14 @@ const Education: FC<IEducation> = () => {
 							</div>
 						</div>
 					</div>
-					<div className="hidden lg:inline-block relative w-full">
-						<div className="w-full sticky top-20 bg-darkBlue flex flex-col items-center p-6">
+					<div
+						className="hidden lg:inline-block relative w-full"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
+						<div
+							className="w-full sticky top-20 bg-darkBlue flex flex-col items-center p-6"
+						>
 							<h1 className="text-white text-[34px] leading-[64px] mb-6">
 								Help us
 								<br /> Help them <br /> to reach for their
@@ -164,7 +176,7 @@ const Education: FC<IEducation> = () => {
 						</div>
 					</div>
 				</div>
-                <CidiContribution />
+				<CidiContribution />
 				<Faqs faqs={faqs} titlePosition="center" />
 			</SectionWrapper>
 			<FoooterBanner text="Help us educate a Child" />

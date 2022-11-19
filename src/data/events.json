@@ -1,0 +1,29 @@
+[
+	{
+		"title": "Orphanage visiting",
+		"description": "As the world slowly returns to normal, this physical event will be a refreshing experience featuring multiple networking sessions.",
+		"bgImage": "/images/been-watered.jpeg",
+		"host": {
+			"description": "We had more than thirty five leads in the first ninety minutes of the conference."
+		},
+        "date": "Oct 15, 2022"
+	},
+	{
+		"title": "Farmers Market",
+		"description": "Hear from global experts on the best practices in fintech and blockchain based applications, within the rapidly changing financial services sector.",
+		"bgImage": "/images/farmers.jpeg",
+		"host": {
+			"description": "Really brilliant line-up of participants!"
+		},
+        "date": "Nov 15, 2022"
+	},
+	{
+		"title": "School Graduation",
+		"description": "Learn from early adopters and tech innovators about how fintech is impacting the organisations, their business functions and consumers at large.",
+		"bgImage": "/images/education-image-1.png",
+		"host": {
+			"description": "We got to meet some unique solutions providers here!"
+		},
+        "date": "Nov 19, 2022"
+	}
+]

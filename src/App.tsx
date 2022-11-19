@@ -10,6 +10,10 @@ import Agriculture from "./pages/projects/Agriculture";
 import Education from "./pages/projects/Education";
 import WaterSanitation from "./pages/projects/WaterSanitation";
 import Volunteer from "./pages/Volunteer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Projects from "./pages/Projects";
+import MediaGallery from "./pages/MediaGallery";
 
 interface IApp {}
 
@@ -17,6 +21,7 @@ const App: FC<IApp> = () => {
 	const location = useLocation();
 
 	useEffect(() => {
+		AOS.init();
 		window.scrollTo(0, 0);
 	}, [location]);
 
@@ -29,6 +34,8 @@ const App: FC<IApp> = () => {
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/donation" element={<Donation />} />
 				<Route path="/volunteer" element={<Volunteer />} />
+				<Route path="/media&gallery" element={<MediaGallery />} />
+				<Route path="/projects" element={<Projects />} />
 				<Route path="/projects/education" element={<Education />} />
 				<Route path="/projects/agriculture" element={<Agriculture />} />
 				<Route

@@ -1,14 +1,20 @@
 [
 	{
 		"bgImage": "/images/agriculture-bg.png",
-		"title": "Miswe Livestock and Crop Production Project",
-		"subTitle": "CIDI’s main objective is to help youth and women in the community to actively participate in initiating, planning and implementing development activities to improve their standard of living.",
+		"title": "Agriculture & Livestock",
+		"subTitle": "Improve Livelihood in our community through Agriculture.",
 		"ctaLink": "/projects/agriculture"
 	},
 	{
 		"bgImage": "/images/students.jpeg",
 		"title": "Education",
-		"subTitle": "We support education sector in Tanzania towards achieving the vision of “Education for All”",
+		"subTitle": "A child without education is like a bird without wings.",
 		"ctaLink": "/projects/education"
+	},
+	{
+		"bgImage": "/images/washing.jpg",
+		"title": "Water, Sanitation & Hygiene",
+		"subTitle": "Safe water, sanitation and hygiene in communities.",
+		"ctaLink": "/projects/water-sanitation"
 	}
 ]
