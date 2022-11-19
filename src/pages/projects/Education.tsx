@@ -161,8 +161,6 @@ const Education: FC<IEducation> = () => {
 					>
 						<div
 							className="w-full sticky top-20 bg-darkBlue flex flex-col items-center p-6"
-							data-aos="fade-left"
-							data-aos-duration="1000"
 						>
 							<h1 className="text-white text-[34px] leading-[64px] mb-6">
 								Help us

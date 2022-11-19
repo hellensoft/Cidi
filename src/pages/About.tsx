@@ -90,7 +90,7 @@ const About: FC<IAbout> = () => {
 						</div>
 						<div data-aos="fade-up" data-aos-duration="2000">
 							<h2 className="text-darkBlue text-2xl font-semibold">
-								Who We Are?
+								Who We Are
 							</h2>
 							<div className="my-6">
 								<p className="text-textGray text-sm leading-[27px]">

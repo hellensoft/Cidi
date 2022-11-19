@@ -1,9 +1,11 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
+import Faqs from "../../components/Faqs";
 import FoooterBanner from "../../components/FooterBanner";
 import PageIntro from "../../components/PageIntro";
 import SectionWrapper from "../../components/SectionWrapper";
 import WaterInvolved from "../../components/WaterInvolved";
+import washFaqs from "../../data/washFaq.json";
 
 interface IWaterSanitation {}
 
@@ -111,13 +113,14 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 						data-aos="fade-up"
 						data-aos-duration="1000"
 						to="#"
-						className="bg-greenPrimary inline-block hover:bg-darkBlue duration-150 rounded-[5px] py-4 text-white font-medium px-6 sm:px-9 h-full border mt-20 border-greenPrimary"
+						className="bg-greenPrimary inline-block hover:bg-darkBlue duration-150 py-4 text-white font-medium px-6 sm:px-9 h-full border mt-20 border-greenPrimary"
 					>
 						About Wash-Africa
 					</Link>
 				</div>
 				<WaterInvolved />
 			</SectionWrapper>
+            <Faqs faqs={washFaqs} />
 			<FoooterBanner text="Help us Improve water hygiene and sanitation" />
 		</div>
 	);

@@ -6,6 +6,8 @@ import services from "../data/whatWeDo.json";
 import { BsArrowRight } from "react-icons/bs";
 import Testimony from "../components/Testimony";
 import HomeIntro from "../components/HomeIntro";
+import Event from "../components/EventSection";
+import BecomeVolunteer from "../components/BecomeVolunteer";
 
 interface IHome {}
 
@@ -96,7 +98,7 @@ const Home: FC<IHome> = () => {
 										alt={service.name}
 									/>
 									<div>
-										<h2 className="text-darkBlue text-lg sm:text-xl font-semibold">
+										<h2 className="text-darkBlue text-lg sm:text-xl h-12 font-semibold">
 											{service.name}
 										</h2>
 										<p className="text-[15px] text-textBlue mt-4 mb-6">
@@ -119,7 +121,7 @@ const Home: FC<IHome> = () => {
 							data-aos-duration="1000"
 						>
 							<Link
-								to="#"
+								to="/projects"
 								className="bg-greenPrimary inline-block hover:bg-darkBlue duration-150 rounded-[5px] py-4 text-white font-medium px-6 sm:px-12 h-full border border-greenPrimary"
 							>
 								View More
@@ -128,7 +130,9 @@ const Home: FC<IHome> = () => {
 					</div>
 				</SectionWrapper>
 			</div>
+			<BecomeVolunteer />
 			<Testimony />
+			<Event />
 			<FoooterBanner text="Help us Improve  Agriculture Livelihood" />
 		</div>
 	);

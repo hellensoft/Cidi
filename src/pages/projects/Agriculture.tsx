@@ -1,7 +1,9 @@
 import { FC } from "react";
+import Faqs from "../../components/Faqs";
 import FoooterBanner from "../../components/FooterBanner";
 import PageIntro from "../../components/PageIntro";
 import SectionWrapper from "../../components/SectionWrapper";
+import agriFaq from "../../data/agriFaq.json";
 
 interface IAgriculture {}
 
@@ -293,6 +295,7 @@ const Agriculture: FC<IAgriculture> = () => {
 					</ul>
 				</div>
 			</SectionWrapper>
+            <Faqs faqs={agriFaq} />
 			<FoooterBanner text="Help us Improve  Agriculture Livelihood" />
 		</div>
 	);

@@ -1,22 +1,22 @@
 [
 	{
 		"icon": "/images/svgs/life.svg",
-		"name": "Agriculture/Livestock",
-		"description": "Small Description with BG Picture",
+		"name": "Agriculture & Livestock",
+		"description": "Improve Livelihood in our community via Agriculture.",
 		"link": "/projects/agriculture",
 		"highlight": false
 	},
 	{
 		"icon": "/images/svgs/education.svg",
 		"name": "Education",
-		"description": "Small Description with BG Picture",
+		"description": "A child without education is like a bird without wings.",
 		"link": "/projects/education",
 		"highlight": true
 	},
 	{
 		"icon": "/images/svgs/drop.svg",
 		"name": "Water, sanitation & hygiene",
-		"description": "Small Description with BG Picture",
+		"description": "Safe water, sanitation and hygiene in communities.",
 		"link": "/projects/water-sanitation",
 		"highlight": false
 	}

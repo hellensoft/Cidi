@@ -35,8 +35,8 @@
 		]
 	},
 	{
-		"name": "Donation",
-		"link": "/donation",
+		"name": "Media & Gallery",
+		"link": "/media&gallery",
 		"multiple": false,
 		"end": false
 	},
