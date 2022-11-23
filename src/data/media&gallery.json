@@ -1,10 +1,42 @@
 [
-    {
-        "event": "Stars Academy School Graduation",
-        "photo": "/images/students.jpeg"
-    },
-    {
-        "event": "Kisarawe Farmer's Market",
-        "photo": "/images/students.jpeg"
-    }
+	{
+		"event": "Stars Academy School Graduation",
+		"photo": "/images/students.jpeg"
+	},
+	{
+		"event": "Kisarawe Farmer's Market",
+		"photo": "/images/farmers.jpeg"
+	},
+	{
+		"event": "Orphanage visit",
+		"photo": "/images/orphanage-visit.JPG"
+	},
+	{
+		"event": "Kisarawe Farmer's Market",
+		"photo": "/images/cows.png"
+	},
+	{
+		"event": "Stars Academy School Graduation",
+		"photo": "/images/teachers.jpeg"
+	},
+	{
+		"event": "Orphanage visit",
+		"photo": "/images/Charity.jpeg"
+	},
+	{
+		"event": "Stars Academy School Graduation",
+		"photo": "/images/learning.png"
+	},
+	{
+		"event": "Kisarawe Farmer's Market",
+		"photo": "/images/planting.png"
+	},
+	{
+		"event": "Stars Academy School Graduation",
+		"photo": "/images/education-image-2.png"
+	},
+	{
+		"event": "Kisarawe Farmer's Market",
+		"photo": "/images/been-watered.jpeg"
+	}
 ]
