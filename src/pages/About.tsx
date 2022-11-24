@@ -178,7 +178,7 @@ const About: FC<IAbout> = () => {
 					>
 						{team.map((member, index) => (
 							<div
-								className="relative group aspect-[274/330] w-full bg-center bg-cover flex items-end"
+								className="relative group aspect-[274/330] w-full bg-top bg-cover flex items-end"
 								key={index}
 								style={{
 									backgroundImage: `url(${member.image})`,

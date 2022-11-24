@@ -1,32 +1,27 @@
 [
     {
-        "name": "Henry Katma",
-        "image": "/images/team-1.png",
-        "role": "Founder"
+        "name": "Henry Catma",
+        "image": "/images/henry.jpeg",
+        "role": "The Chairman"
     },
     {
-        "name": "Henry Katma",
-        "image": "/images/team-3.png",
-        "role": "Founder"
+        "name": "Naima Mpili ",
+        "image": "/images/naima.jpeg",
+        "role": "Project Manager"
     },
     {
-        "name": "Henry Katma",
-        "image": "/images/team-2.png",
-        "role": "Founder"
+        "name": "Charles Edson",
+        "image": "/images/charles.jpeg",
+        "role": "Lead Project Coordinator"
     },
     {
-        "name": "Henry Katma",
-        "image": "/images/team-2.png",
-        "role": "Founder"
+        "name": "Joseph Henry",
+        "image": "/images/joseph.jpeg",
+        "role": "IT Expert"
     },
     {
-        "name": "Henry Katma",
-        "image": "/images/team-1.png",
-        "role": "Founder"
-    },
-    {
-        "name": "Henry Katma",
-        "image": "/images/team-3.png",
-        "role": "Founder"
+        "name": "Salome Donati",
+        "image": "/images/salome.jpeg",
+        "role": "Chief Financial Officer"
     }
 ]
