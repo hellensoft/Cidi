@@ -53,13 +53,14 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 						</p>
 					</div>
 				</div>
+				<WaterInvolved />
 				<div
 					className="pt-32"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 				>
 					<h1 className="text-darkBlue max-w-[485px] font-semibold text-2xl sm:text-[36px] mb-6">
-						CIDI-WASH Africa on COVID-19
+						COVID-19 correspondence
 					</h1>
 					<p className="text-justify text-base md:text-md text-textGray">
 						Well-positioned to help communities respond to the
@@ -119,7 +120,7 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 						About Wash-Africa
 					</Link>
 				</div>
-				<WaterInvolved />
+				
 			</SectionWrapper>
             <Faqs faqs={washFaqs} />
 			<FoooterBanner text="Help us Improve water hygiene and sanitation" />
