@@ -26,6 +26,7 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 						/>
 					</div>
 					<div className="space-y-8 lg:ml-12">
+						<h1 className="text-darkBlue max-w-[480px] font-semibold text-2xl sm:text-[36px] mb-6">WASH Situational context in Tanzania.</h1>
 						<p className="text-justify text-base md:text-md text-textGray font-medium">
 							It is estimated that Tanzania spends 70 per cent of
 							its health budget on preventable WASH-related
