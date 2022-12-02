@@ -60,8 +60,7 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 					data-aos-duration="1000"
 				>
 					<h1 className="text-darkBlue max-w-[485px] font-semibold text-2xl sm:text-[36px] mb-6">
-						COVID-19 correspondence
-					</h1>
+						Response on COVID-19 </h1>
 					<p className="text-justify text-base md:text-md text-textGray">
 						Well-positioned to help communities respond to the
 						COVID-19 crisis and become more resilient. We act
