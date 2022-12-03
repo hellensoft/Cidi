@@ -12,13 +12,14 @@ import SectionWrapper from "../components/SectionWrapper";
 import team from "../data/ourTeam.json";
 import faqs from "../data/aboutFaqs.json";
 import Faqs from "../components/Faqs";
+import CoreValues from "../components/CoreValues";
 
 interface IAbout {}
 
 const About: FC<IAbout> = () => {
 	return (
 		<div>
-			<PageIntro name="About Us" />
+			<PageIntro name="Our History" id="history" />
 			<SectionWrapper>
 				<div
 					className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center mb-24"
@@ -29,15 +30,20 @@ const About: FC<IAbout> = () => {
 						<h2 className="text-darkBlue text-2xl font-semibold">
 							Who We Are
 						</h2>
-						<div className="my-6">
+						<div className="my-6 space-y-4">
+							<p className="text-textGray text-sm leading-[27px]">
+								“CIDI “stands for Community Information
+								Development Initiatives”
+							</p>
 							<p className="text-textGray text-sm leading-[27px]">
 								CIDI is a registered National NGO under NGO Act
-								No 24, 2002 of the Laws of United Republic of
-								Tanzania, with Registration number{" "}
+								No. 24, 2002 of the Laws of United Republic of
+								Tanzania by the Ministry of Health, Community
+								Development, Gender and Children with a
+								registration No.{" "}
 								<span className="text-darkBlue font-bold">
 									00NGO/R/2765
 								</span>
-								.
 							</p>
 							<p className="text-textGray text-sm leading-[27px]">
 								It operates to promote access to Information
@@ -52,167 +58,194 @@ const About: FC<IAbout> = () => {
 						</div>
 					</div>
 					<div
-						className="hidden md:inline-block relative aspect-square w-full h-auto"
 						data-aos="fade-up"
 						data-aos-duration="2000"
+						className="relative aspect-square w-full h-auto"
 					>
-						<img
-							className="absolute top-0 right-0"
-							src="/images/plantations.png"
-							alt="plants"
-						/>
-						<img
-							className="hidden lg:inline-block absolute bottom-0 left-0"
-							src="/images/cows.png"
-							alt="plants"
-						/>
+						<img src="/images/owners.jpg" alt="owners" />
+						<div className="hidden lg:inline-block w-full h-[400px] absolute bg-darkBlue bottom-24 -right-10 -z-10"></div>
 					</div>
 				</div>
 			</SectionWrapper>
 			<div className="bg-sectionGray">
 				<SectionWrapper>
 					<div
-						className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center py-24"
+						className="px-4 grid grid-cols-2 gap-12"
 						data-aos="fade-up"
 						data-aos-duration="1000"
 					>
-						<div className="hidden md:inline-block relative aspect-square w-full h-auto">
-							<img
-								className="absolute top-0 left-0"
-								src="/images/planting.png"
-								alt="plants"
-							/>
-							<img
-								className="hidden lg:inline-block absolute bottom-0 right-0"
-								src="/images/learning.png"
-								alt="plants"
-							/>
+						<div className="mx-auto bg-darkBlue text-center py-12 px-6 rounded-[10px] my-28">
+							<h1 className="text-white text-[34px] font-semibold mb-4">
+								Vision
+							</h1>
+							<p className="text-lightText text-[15px] max-w-[668px] leading-[27px] mx-auto">
+								Improved community wellbeing through quality
+								education and shared information.
+							</p>
 						</div>
-						<div data-aos="fade-up" data-aos-duration="2000">
-							<h2 className="text-darkBlue text-2xl font-semibold">
-								Who We Are
-							</h2>
-							<div className="my-6">
-								<p className="text-textGray text-sm leading-[27px]">
-									CIDI represents the interest of the
-									multi-sector wishing to facilitate, educate,
-									inform and promote the development growth
-									and expansion of different multi-sectorial
-									industries on poverty alleviation in
-									education, information, agriculture,
-									capacity building and other initiatives
-									through reciprocity, Dialogue and working
-									closely with the relevant Government and
-									non-Government bodies in Tanzania.
-								</p>
-							</div>
+						<div className=" mx-auto bg-darkBlue text-center py-12 px-6 rounded-[10px] my-28">
+							<h1 className="text-white text-[34px] font-semibold mb-4">
+								Mission
+							</h1>
+							<p className="text-lightText text-[15px] max-w-[668px] leading-[27px] mx-auto">
+								To transform the lives of children, youth and
+								community a large through provision of quality
+								education and shared information required for
+								self-determination and developmental support.
+							</p>
 						</div>
 					</div>
 				</SectionWrapper>
 			</div>
-			<div className="px-4" data-aos="fade-up" data-aos-duration="1000">
-				<div className="max-w-[806px] mx-auto bg-darkBlue text-center py-12 px-6 rounded-[10px] my-28">
-					<h1 className="text-white text-[34px] font-semibold mb-4">
-						Mission and Vision
-					</h1>
-					<p className="text-lightText text-[15px] max-w-[668px] leading-[27px] mx-auto">
-						The organization shall be voluntary, consultative,
-						non-government, non-political and non-profit making with
-						the sole focus on the growth and development in
-						improving the quality of life to all it serves through
-						participatory approach on different development
-						initiatives of Tanzania.
-					</p>
-				</div>
-			</div>
 			<SectionWrapper>
-				<div data-aos="fade-up" data-aos-duration="1000">
-					<h2 className="text-darkBlue text-2xl font-semibold">
-						Core Values
-					</h2>
-					<div className="ml-0 sm:ml-16 mt-6">
-						<p className="text-textGray">
-							To improve living standards of community members
-							through improved livelihoods, promote availability
-							and accessibility of information and resources to
-							overcome poverty and misery through different
-							initiatives that are education based on all levels,
-							religious counselling, agriculture, manufacturing
-							and infrastructure based on practical business
-							initiatives.
+				<CoreValues />
+			</SectionWrapper>
+			<div className="bg-darkBlue">
+				<SectionWrapper>
+					<div
+						data-aos="fade-up"
+						data-aos-duration="1000"
+						className="max-w-5xl py-24"
+					>
+						<h2 className="text-white text-3xl font-semibold mb-5">
+							CIDI Governance
+						</h2>
+						<p className="text-lightText text-justify">
+							CIDI is a member-based organization. Members meets
+							once annually during Annual General Assembly or
+							extra ordinary meeting. It has a Board with seven
+							members who meet once after every six months, but do
+							meet at any time when a need arises. The
+							organization has a secretariat that are overseeing
+							implementation of daily activities of the
+							organization. Additionally, CIDI has a team of 4
+							multidisciplinary experts who forms Technical
+							Advisory Committee that advice the secretariat on
+							all technical matters regularly.
 						</p>
-						<ul className="list-disc ml-16 grid grid-cols-2 gap-y-4 max-w-[700px] mt-10">
-							<li className="text-justify text-sm text-textGray">
-								Professionalism
-							</li>
-							<li className="text-justify text-sm text-textGray">
-								Honest
-							</li>
-							<li className="text-justify text-sm text-textGray">
-								Transparency
-							</li>
-							<li className="text-justify text-sm text-textGray">
-								Team work
-							</li>
-							<li className="text-justify text-sm text-textGray">
-								Intergrity
-							</li>
-							<li className="text-justify text-sm text-textGray">
-								Collaboration
-							</li>
-						</ul>
+						<p
+							className="text-lightText mt-6 text-justify"
+							id="finance"
+						>
+							CIDI team is composed of qualified and experienced
+							experts and volunteers from various background
+							(Environmental, Agriculture, water resources,
+							nutritionist, social workers, medicine, WASH
+							business development specialist, gender, agronomist,
+							lawyers etc). CIDI has a system of quality planning
+							and controls at field, head office and partnerships
+							levels. Regular planning and review meeting which
+							involves key members of the organization are set up
+							and operational. Major decisions and approvals of
+							yearly plans and budgets are done in annual planning
+							meetings. The annual plans are then split into small
+							plans at monthly and quarterly levels including,
+							field/project level, head office and partners
+							planning levels.
+						</p>
 					</div>
-				</div>
+				</SectionWrapper>
+			</div>
+
+			<SectionWrapper>
 				<div
-					className="my-28 max-w-[910px] mx-auto"
 					data-aos="fade-up"
 					data-aos-duration="1000"
+					className="max-w-5xl py-24"
 				>
-					<h2 className="text-center text-darkBlue text-2xl font-semibold">
-						Our Team
+					<h2 className="text-darkBlue text-3xl font-semibold mb-5">
+						Finance
 					</h2>
+					<p className="text-textBlue text-justify">
+						CIDI has a Finance Department that adhere to
+						International Financial Reporting Standards (IFRS) and
+						practices. Finance department is managed by a finance
+						officer who is a holder of CPA assisted by one chartered
+						accountant and one assistant with duties to manage and
+						account for funds.
+					</p>
+					<p className="text-textBlue mt-6 text-justify">
+						The finance department maintains a system for recording
+						and submitting all types of financial transactions for
+						the purpose of implementing projects and running
+						organization activities. The accounting software in use
+						is called Tally. Financial details and transactions are
+						processed through computer program where various reports
+						and details are extracted on daily basis for
+						crosschecking, approvals and as part of back-up system
+						to external/hard files.
+					</p>
+					<p className="text-textBlue mt-6 text-justify" id="team">
+						On monthly basis reports are produced, signed and put on
+						file for various uses. Bank reconciliation is done
+						monthly and financial reports for internal reflection is
+						done quarterly. Annual Financial statements are prepared
+						each year and audited by independent Auditor. Revenue
+						grants from donors are recorded in the accounting period
+						it is received and expenses recognized when incurred.
+						Grants and donations are recorded separately from
+						operational activities. In-kind contributions are also
+						recognized through journal adjustments that are
+						supported by appropriate and objective documentation
+						(e.g., agreements, formal letters or memos and
+						Memorandum of Understanding). CIDI has zero tolerance
+						for corruption, theft, fraud and dishonesty.
+					</p>
+				</div>
+			</SectionWrapper>
+			<div className="bg-sectionGray">
+				<SectionWrapper>
 					<div
-						className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-6 md:gap-12 mt-12"
+						className="py-28 max-w-[910px] mx-auto"
 						data-aos="fade-up"
 						data-aos-duration="1000"
 					>
-						{team.map((member, index) => (
-							<div
-								className="relative group aspect-[274/330] w-full bg-top bg-cover flex items-end"
-								key={index}
-								style={{
-									backgroundImage: `url(${member.image})`,
-								}}
-							>
-								<div className="inline-block sm:hidden sm:group-hover:inline-block duration-300 w-full aspect-[274/211] bg-[linear-gradient(180deg,_rgba(58,65,84,0)_0%,_rgba(58,65,84,0.69)_54.19%,_#3A4154_100%)]">
-									<div className="px-4 pb-8 flex items-start h-full justify-end flex-col">
-										<h2 className="text-white text-2xl font-semibold">
-											{member.name}
-										</h2>
-										<p className="text-sm text-lightText">
-											{member.role}
-										</p>
-										<div className="flex items-center space-x-4 mt-4">
-											<Link to="#">
-												<FaTwitter className="text-[#888888] h-5 w-5" />
-											</Link>
-											<Link to="#">
-												<FaFacebookF className="text-[#888888] h-5 w-5" />
-											</Link>
-											<Link to="#">
-												<FaInstagram className="text-[#888888] h-5 w-5" />
-											</Link>
-											<Link to="#">
-												<FaLinkedinIn className="text-[#888888] h-5 w-5" />
-											</Link>
+						<h2 className="text-center text-darkBlue text-3xl font-semibold">
+							Our Team
+						</h2>
+						<div
+							className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-6 md:gap-12 mt-12"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+						>
+							{team.map((member, index) => (
+								<div
+									className="relative group aspect-[274/330] w-full bg-top bg-cover flex items-end"
+									key={index}
+									style={{
+										backgroundImage: `url(${member.image})`,
+									}}
+								>
+									<div className="inline-block sm:hidden sm:group-hover:inline-block duration-300 w-full aspect-[274/211] bg-[linear-gradient(180deg,_rgba(58,65,84,0)_0%,_rgba(58,65,84,0.69)_54.19%,_#3A4154_100%)]">
+										<div className="px-4 pb-8 flex items-start h-full justify-end flex-col">
+											<h2 className="text-white text-2xl font-semibold">
+												{member.name}
+											</h2>
+											<p className="text-sm text-lightText">
+												{member.role}
+											</p>
+											<div className="flex items-center space-x-4 mt-4">
+												<Link to="#">
+													<FaTwitter className="text-[#888888] h-5 w-5" />
+												</Link>
+												<Link to="#">
+													<FaFacebookF className="text-[#888888] h-5 w-5" />
+												</Link>
+												<Link to="#">
+													<FaInstagram className="text-[#888888] h-5 w-5" />
+												</Link>
+												<Link to="#">
+													<FaLinkedinIn className="text-[#888888] h-5 w-5" />
+												</Link>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						))}
+							))}
+						</div>
 					</div>
-				</div>
-			</SectionWrapper>
+				</SectionWrapper>
+			</div>
 			<Faqs faqs={faqs} />
 			<FoooterBanner text="Help us educate a Child" />
 		</div>

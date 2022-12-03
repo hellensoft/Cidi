@@ -12,21 +12,23 @@ interface IWaterSanitation {}
 const WaterSanitation: FC<IWaterSanitation> = () => {
 	return (
 		<div>
-			<PageIntro name="Water, Sanitation and Hygiene" />
+			<PageIntro name="Water, Hygiene and Sanitation (WASH)" />
 			<SectionWrapper>
 				<div
 					className="grid md:grid-cols-2 lg:grid-cols-[500px_1fr] gap-8 place-items-center"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 				>
-					<div data-aos="fade-up" data-aos-duration="1000">
+					<div>
 						<img
 							src="/images/sanitation-image.png"
 							alt="section sanitation"
 						/>
 					</div>
 					<div className="space-y-8 lg:ml-12">
-						<h1 className="text-darkBlue max-w-[480px] font-semibold text-2xl sm:text-[36px] mb-6">WASH Situational context in Tanzania.</h1>
+						<h1 className="text-darkBlue max-w-[480px] font-semibold text-2xl sm:text-[36px] mb-6">
+							WASH Situational context in Tanzania.
+						</h1>
 						<p className="text-justify text-base md:text-md text-textGray font-medium">
 							It is estimated that Tanzania spends 70 per cent of
 							its health budget on preventable WASH-related
@@ -53,14 +55,15 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 						</p>
 					</div>
 				</div>
-				<WaterInvolved />
+				<WaterInvolved id="covid" />
 				<div
 					className="pt-32"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 				>
 					<h1 className="text-darkBlue max-w-[485px] font-semibold text-2xl sm:text-[36px] mb-6">
-						Response on COVID-19 </h1>
+						Response on COVID-19{" "}
+					</h1>
 					<p className="text-justify text-base md:text-md text-textGray">
 						Well-positioned to help communities respond to the
 						COVID-19 crisis and become more resilient. We act
@@ -119,9 +122,8 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 						About Wash-Africa
 					</Link>
 				</div>
-				
 			</SectionWrapper>
-            <Faqs faqs={washFaqs} />
+			<Faqs faqs={washFaqs} />
 			<FoooterBanner text="Help us Improve water hygiene and sanitation" />
 		</div>
 	);
