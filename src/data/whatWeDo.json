@@ -1,21 +1,35 @@
 [
 	{
 		"icon": "/images/svgs/life.svg",
-		"name": "Agriculture & Livestock",
+		"name": "Agriculture, Food Security and Climate Change",
 		"description": "Improve Livelihood in our community via Agriculture.",
 		"link": "/projects/agriculture",
 		"highlight": false
 	},
 	{
 		"icon": "/images/svgs/education.svg",
-		"name": "Education",
+		"name": "Quality Education",
 		"description": "A child without education is like a bird without wings.",
 		"link": "/projects/education",
 		"highlight": true
 	},
 	{
 		"icon": "/images/svgs/drop.svg",
-		"name": "Water, sanitation & hygiene",
+		"name": "Water, Hygiene & Sanitation (WASH)",  
+		"description": "Safe water, sanitation and hygiene in communities.",
+		"link": "/projects/water-sanitation",
+		"highlight": false
+	},
+	{
+		"icon": "/images/svgs/education.svg",
+		"name": "Child Protection and Child Rights Governance",
+		"description": "A child without education is like a bird without wings.",
+		"link": "/projects/education",
+		"highlight": false
+	},
+	{
+		"icon": "/images/svgs/drop.svg",
+		"name": "Health and Nutrition",
 		"description": "Safe water, sanitation and hygiene in communities.",
 		"link": "/projects/water-sanitation",
 		"highlight": false

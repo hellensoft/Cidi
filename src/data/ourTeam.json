@@ -5,6 +5,11 @@
         "role": "The Chairman"
     },
     {
+        "name": "Salome Donati",
+        "image": "/images/salome.jpeg",
+        "role": "Chief Financial Officer"
+    },
+    {
         "name": "Naima Mpili ",
         "image": "/images/naima.jpeg",
         "role": "Project Manager"
@@ -18,10 +23,6 @@
         "name": "Joseph Henry",
         "image": "/images/joseph.jpeg",
         "role": "IT Expert"
-    },
-    {
-        "name": "Salome Donati",
-        "image": "/images/salome.jpeg",
-        "role": "Chief Financial Officer"
     }
+    
 ]

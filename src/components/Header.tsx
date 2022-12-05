@@ -7,11 +7,13 @@ import { FaAngleDown } from "react-icons/fa";
 import { CgMenu } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
 import { BsChevronDown } from "react-icons/bs";
+import { NavHashLink } from "react-router-hash-link";
 
 interface IHeader {}
 
 const Header: FC<IHeader> = () => {
 	const { pathname } = useLocation();
+    console.log(useLocation())
 	const [openSideBar, setOpenSideBar] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
 
@@ -150,30 +152,50 @@ const Header: FC<IHeader> = () => {
 																					link,
 																					index
 																				) => (
-																					<NavLink
-																						key={
-																							index
-																						}
-																						end={
-																							link.end
-																						}
-																						to={
-																							link.link ||
-																							"/"
-																						}
-																						className={({
-																							isActive,
-																						}) =>
-																							`hover:text-greenPrimary font-medium text-bluePrimary hover:bg-[#eee] px-8 py-2 w-full ${
-																								isActive &&
-																								"bg-[#eee] text-bluePrimary"
-																							}`
-																						}
-																					>
-																						{
-																							link.name
-																						}
-																					</NavLink>
+																					<>
+																						{link.hash ? (
+																							<NavHashLink
+																								smooth
+																								to={
+																									link.link
+																								}
+																								key={
+																									index
+																								}
+																								// activeClassName="bg-[#eee] text-bluePrimary"
+																								className="hover:text-greenPrimary font-medium text-bluePrimary hover:bg-[#eee] px-8 py-2 w-full"
+																							>
+																								{
+																									link.name
+																								}
+																							</NavHashLink>
+																						) : (
+																							<NavLink
+																								key={
+																									index
+																								}
+																								end={
+																									link.end
+																								}
+																								to={
+																									link.link ||
+																									"/"
+																								}
+																								className={({
+																									isActive,
+																								}) =>
+																									`hover:text-greenPrimary font-medium text-bluePrimary hover:bg-[#eee] px-8 py-2 w-full ${
+																										isActive &&
+																										"bg-[#eee] text-bluePrimary"
+																									}`
+																								}
+																							>
+																								{
+																									link.name
+																								}
+																							</NavLink>
+																						)}
+																					</>
 																				)
 																			)}
 																		</div>
@@ -291,32 +313,54 @@ const Header: FC<IHeader> = () => {
 																subLink,
 																index
 															) => (
-																<Menu.Item>
-																	<NavLink
-																		end={
-																			subLink.end
-																		}
-																		key={
-																			index
-																		}
-																		to={
-																			subLink.link
-																		}
-																		className={({
-																			isActive,
-																		}) =>
-																			`text-darkBlue border-b-[3px] ${
-																				isActive
-																					? "border-greenPrimary"
-																					: "border-transparent"
-																			}`
-																		}
-																	>
-																		{
-																			subLink.name
-																		}
-																	</NavLink>
-																</Menu.Item>
+																<>
+																	{subLink.hash ? (
+																		<Menu.Item>
+																			<NavHashLink
+																				smooth
+																				to={
+																					subLink.hashLink
+																				}
+																				key={
+																					index
+																				}
+																				// activeClassName="bg-[#eee] text-bluePrimary"
+																				className="text-darkBlue border-b-[3px] border-transparent"
+																			>
+																				{
+																					subLink.name
+																				}
+																			</NavHashLink>
+																		</Menu.Item>
+																	) : (
+																		<Menu.Item>
+																			<NavLink
+																				end={
+																					subLink.end
+																				}
+																				key={
+																					index
+																				}
+																				to={
+																					subLink.link
+																				}
+																				className={({
+																					isActive,
+																				}) =>
+																					`text-darkBlue border-b-[3px] ${
+																						isActive
+																							? "border-greenPrimary"
+																							: "border-transparent"
+																					}`
+																				}
+																			>
+																				{
+																					subLink.name
+																				}
+																			</NavLink>
+																		</Menu.Item>
+																	)}
+																</>
 															)
 														)}
 													</Menu.Items>

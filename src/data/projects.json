@@ -1,13 +1,13 @@
 [
 	{
-		"name": "Education",
+		"name": "Quality Education",
 		"description": "A child without education is like a bird without wings.",
 		"image": "/images/students.jpeg",
 		"tag": "education",
 		"link": "/projects/education"
 	},
 	{
-		"name": "Agriculture & Livestock",
+		"name": "Agriculture, Food Security and Climate Change",
 		"description": "Improve Livelihood in our community through Agriculture.",
 		"image": "/images/watering.jpeg",
 		"tag": "agriculture",
@@ -19,5 +19,19 @@
 		"image": "/images/washing.jpg",
 		"tag": "cidi-wash",
 		"link": "/projects/water-sanitation"
+	},
+	{
+		"name": "Health and Nutrition",
+		"description": "Safe water, sanitation and hygiene in communities.",
+		"image": "/images/health.jpeg",
+		"tag": "health",
+		"link": "/projects"
+	},
+	{
+		"name": "Child Protection and Child Rights Governance",
+		"description": "A child without education is like a bird without wings.",
+		"image": "/images/child-protect.jpeg",
+		"tag": "child rights",
+		"link": "/projects"
 	}
 ]

@@ -10,7 +10,7 @@ interface IAgriculture {}
 const Agriculture: FC<IAgriculture> = () => {
 	return (
 		<div>
-			<PageIntro name="Miswe Livestock and Crop Production Project" />
+			<PageIntro name="Agriculture, Food Security and Climate Change." />
 			<SectionWrapper>
 				<div>
 					<div
@@ -19,7 +19,7 @@ const Agriculture: FC<IAgriculture> = () => {
 						data-aos-duration="1000"
 					>
 						<img
-							src="/images/agriculture-1.png"
+							src="/images/agri.jpeg"
 							alt="agriculture images"
 							className="w-full aspect-[10/7] object-cover object-center"
 						/>
@@ -29,6 +29,9 @@ const Agriculture: FC<IAgriculture> = () => {
 							className="hidden xs:inline-block h-full object-cover object-center"
 						/>
 					</div>
+					<h2 className="text-darkBlue mt-16 font-semibold text-xl sm:text-[36px]">
+						Situation Anaylsis in Tanzania
+					</h2>
 					<p
 						className="text-textBlue mt-16 max-w-[1096px] text-justify mx-auto"
 						data-aos="fade-up"
@@ -100,11 +103,13 @@ const Agriculture: FC<IAgriculture> = () => {
 									fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
 								/>
 							</svg>
-							<img
-								className="w-full h-auto"
-								src="/images/agriculture-3.png"
-								alt="plants"
-							/>
+							<div className="w-full h-auto aspect-square rounded overflow-hidden">
+								<img
+									className="w-full h-full object-cover object-center"
+									src="/images/agriculture-woman.jpeg"
+									alt="plants"
+								/>
+							</div>
 						</div>
 						<div>
 							<div className="">
@@ -236,11 +241,13 @@ const Agriculture: FC<IAgriculture> = () => {
 									fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
 								/>
 							</svg>
-							<img
-								className="w-full h-auto z-30"
-								src="/images/agriculture-3.png"
-								alt="plants"
-							/>
+							<div className="w-full h-auto aspect-square rounded overflow-hidden">
+								<img
+									className="w-full h-full object-cover object-center"
+									src="/images/mbuzi.jpeg"
+									alt="plants"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -295,7 +302,7 @@ const Agriculture: FC<IAgriculture> = () => {
 					</ul>
 				</div>
 			</SectionWrapper>
-            <Faqs faqs={agriFaq} />
+			<Faqs faqs={agriFaq} />
 			<FoooterBanner text="Help us Improve  Agriculture Livelihood" />
 		</div>
 	);

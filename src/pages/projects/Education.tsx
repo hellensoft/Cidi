@@ -13,7 +13,7 @@ interface IEducation {}
 const Education: FC<IEducation> = () => {
 	return (
 		<div>
-			<PageIntro name="Education" />
+			<PageIntro name="Quality Education" />
 			<SectionWrapper>
 				<div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8">
 					<div>
@@ -22,6 +22,9 @@ const Education: FC<IEducation> = () => {
 								src="/images/education-image-1.png"
 								alt="students at school"
 							/>
+							<h2 className="text-darkBlue mt-16 font-semibold text-xl sm:text-[36px]">
+								Situation Anaylsis in Tanzania
+							</h2>
 							<p className="text-textBlue mt-16 mb-10 text-justify">
 								CIDI believes that good quality publicly funded
 								education is paramount to every child and should
@@ -90,7 +93,7 @@ const Education: FC<IEducation> = () => {
 								the Country.
 							</p>
 							<div data-aos="fade-up" data-aos-duration="1000">
-								<h2 className="text-darkBlue text-2xl font-semibold mt-16 mb-10">
+								<h2 className="text-darkBlue text-2xl font-semibold mt-16 mb-5">
 									Children and Technology
 								</h2>
 								<p className="text-textBlue text-justify">
@@ -159,9 +162,7 @@ const Education: FC<IEducation> = () => {
 						data-aos="fade-up"
 						data-aos-duration="1000"
 					>
-						<div
-							className="w-full sticky top-20 bg-darkBlue flex flex-col items-center p-6"
-						>
+						<div className="w-full sticky top-20 bg-darkBlue flex flex-col items-center p-6">
 							<h1 className="text-white text-[34px] leading-[64px] mb-6">
 								Help us
 								<br /> Help them <br /> to reach for their

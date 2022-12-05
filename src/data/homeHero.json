@@ -7,7 +7,7 @@
 	},
 	{
 		"bgImage": "/images/students.jpeg",
-		"title": "Education",
+		"title": "Quality Education",
 		"subTitle": "A child without education is like a bird without wings.",
 		"ctaLink": "/projects/education"
 	},
@@ -15,6 +15,18 @@
 		"bgImage": "/images/washing.jpg",
 		"title": "Water, Sanitation & Hygiene",
 		"subTitle": "Safe water, sanitation and hygiene in communities.",
+		"ctaLink": "/projects/water-sanitation"
+	},
+	{
+		"bgImage": "/images/health.jpeg",
+		"title": "Health Promotion",
+		"subTitle": "Promoting health and well-being in our communities.",
+		"ctaLink": "/projects/water-sanitation"
+	},
+	{
+		"bgImage": "/images/child-protect.jpeg",
+		"title": "Child Rights Protection",
+		"subTitle": "Promoting health and well-being in our communities.",
 		"ctaLink": "/projects/water-sanitation"
 	}
 ]
