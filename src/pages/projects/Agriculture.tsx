@@ -253,12 +253,13 @@ const Agriculture: FC<IAgriculture> = () => {
 				</div>
 
 				{/* GIVING BACKK TO THE CUSTOMER */}
-				<div
-					className="py-12 max-w-5xl"
+			 
+				 <div
+					className="py-24 max-w-full"
 					data-aos="fade-up"
 					data-aos-duration="1000"
-				>
-					<h1 className="text-2xl sm:text-3xl text-darkBluedark font-semibold">
+				 >
+					<h1 className="text-2xl sm:text-3xl text-darkBlue font-semibold">
 						Giving back to the Community
 					</h1>
 					<p className="text-md mt-4 md:text-lg text-justify text-gray-500">
@@ -299,8 +300,10 @@ const Agriculture: FC<IAgriculture> = () => {
 							knowledge would be introduced in the management of
 							livestock and crop production.
 						</li>
-					</ul>
-				</div>
+					 </ul>
+						</div>
+				
+				
 			</SectionWrapper>
 			<Faqs faqs={agriFaq} />
 			<FoooterBanner text="Help us Improve  Agriculture Livelihood" />

@@ -1,28 +1,28 @@
 [
 	{
 		"title": "Orphanage visits",
-		"description": "As the world slowly returns to normal, this physical event will be a refreshing experience featuring multiple networking sessions.",
+		"description": "Orphaned Children are some of the world’s most vulnerable people. Many of these kids have spent their early years in a constant state of chaos.",
 		"bgImage": "/images/been-watered.jpeg",
 		"host": {
-			"description": "We had more than thirty five leads in the first ninety minutes of the conference."
+			"description": "Our mission is to give a home and educatio to less fortunate Children!"
 		},
         "date": "Oct 15, 2022"
 	},
 	{
 		"title": "Farmers Market",
-		"description": "Hear from global experts on the best practices in fintech and blockchain based applications, within the rapidly changing financial services sector.",
+		"description": "We care about the community and it's people thus why we dedicate not only in helping the farm and educating them on proper livestocking but also assist on market search for them to sell their products",
 		"bgImage": "/images/farmers.jpeg",
 		"host": {
-			"description": "Really brilliant line-up of participants!"
+			"description": "Our expert are invested in making sure all farmers get proper benefits"
 		},
         "date": "Nov 15, 2022"
 	},
 	{
 		"title": "School Graduation",
-		"description": "Learn from early adopters and tech innovators about how fintech is impacting the organisations, their business functions and consumers at large.",
+		"description": "CIDI believes that good quality publicly funded education is paramount to every child and should not be negotiable. We will work with communities, governments and partners to remove barriers to girls’ education and promote gender equality in education.",
 		"bgImage": "/images/education-image-1.png",
 		"host": {
-			"description": "We got to meet some unique solutions providers here!"
+			"description": "We have opened a school for the less fortunate children to emphasize Quality education for all!"
 		},
         "date": "Nov 19, 2022"
 	}

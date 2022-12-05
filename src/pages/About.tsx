@@ -100,6 +100,7 @@ const About: FC<IAbout> = () => {
 			<SectionWrapper>
 				<CoreValues />
 			</SectionWrapper>
+			
 			<div className="bg-darkBlue">
 				<SectionWrapper>
 					<div
