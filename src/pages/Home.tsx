@@ -135,7 +135,7 @@ const Home: FC<IHome> = () => {
 						>
 							<Link
 								to="/projects"
-								className="bg-greenPrimary inline-block hover:bg-darkBlue duration-150 rounded-[5px] py-4 text-white font-medium px-6 sm:px-12 h-full border border-greenPrimary"
+								className="bg-greenPrimary inline-block hover:bg-darkBlue duration-150 rounded-[5px] py-4 text-white font-medium px-6 sm:px-12 h-full border"
 							>
 								View More
 							</Link>

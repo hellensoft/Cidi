@@ -21,16 +21,16 @@
 		"highlight": false
 	},
 	{
-		"icon": "/images/svgs/education.svg",
+		"icon": "/images/svgs/child.svg",
 		"name": "Child Protection and Child Rights Governance",
-		"description": "A child without education is like a bird without wings.",
+		"description": "Provision of services related to the protection of children from harm and the protection of all rights of children;",
 		"link": "/projects/education",
 		"highlight": false
 	},
 	{
-		"icon": "/images/svgs/drop.svg",
+		"icon": "/images/svgs/health.svg",
 		"name": "Health and Nutrition",
-		"description": "Safe water, sanitation and hygiene in communities.",
+		"description": "Ensure that households and communities are empowered for sustainable access and utilization of strengthened maternal.",
 		"link": "/projects/water-sanitation",
 		"highlight": false
 	}
