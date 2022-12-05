@@ -21,14 +21,14 @@
 		"highlight": false
 	},
 	{
-		"icon": "/images/svgs/child.svg",
+		"icon": "/images/svgs/child-care.svg",
 		"name": "Child Protection and Child Rights Governance",
 		"description": "Provision of services related to the protection of children from harm and the protection of all rights of children;",
 		"link": "/projects/education",
 		"highlight": false
 	},
 	{
-		"icon": "/images/svgs/health.svg",
+		"icon": "/images/svgs/health-care.svg",
 		"name": "Health and Nutrition",
 		"description": "Ensure that households and communities are empowered for sustainable access and utilization of strengthened maternal.",
 		"link": "/projects/water-sanitation",
