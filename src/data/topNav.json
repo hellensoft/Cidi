@@ -8,8 +8,45 @@
 	{
 		"name": "About",
 		"link": "/about",
-		"multiple": false,
-		"end": false
+		"multiple": true,
+		"end": false,
+		"links": [
+			{
+				"name": "Our History",
+				"hashLink": "/about#history",
+				"end": false,
+				"link": "/about",
+				"hash": true
+			},
+			{
+				"name": "Cidi Governance",
+				"hashLink": "/about#governance",
+				"end": false,
+				"link": "/about",
+				"hash": true
+			},
+			{
+				"name": "Finance Management",
+				"hashLink": "/about#finance",
+				"end": false,
+				"link": "/about",
+				"hash": true
+			},
+			{
+				"name": "Our Team",
+				"hashLink": "/about#team",
+				"end": false,
+				"link": "/about",
+				"hash": true
+			},
+			{
+				"name": "Oppurtunities",
+				"hashLink": "/about#opportunities",
+				"end": false,
+				"link": "/about",
+				"hash": true
+			}
+		]
 	},
 	{
 		"name": "Projects",
@@ -18,19 +55,46 @@
 		"end": false,
 		"links": [
 			{
-				"name": "Education",
+				"name": "Quality Education",
 				"link": "/projects/education",
-				"end": false
+				"hashLink": "/about#opportunities",
+				"end": false,
+				"hash": false
 			},
 			{
 				"name": "Agriculture/Livestock",
 				"link": "/projects/agriculture",
-				"end": false
+				"hashLink": "/about#opportunities",
+				"end": false,
+				"hash": false
 			},
 			{
 				"name": "Water, sanitation & hygiene",
 				"link": "/projects/water-sanitation",
-				"end": false
+				"hashLink": "/about#opportunities",
+				"end": false,
+				"hash": false
+			},
+			{
+				"name": "Health and Nutrition",
+				"link": "/projects#",
+				"hashLink": "/projects#opportunities",
+				"end": false,
+				"hash": true
+			},
+			{
+				"name": "Child Protection and Rights",
+				"link": "/projects#",
+				"hashLink": "/projects#opportunities",
+				"end": false,
+				"hash": true
+			},
+			{
+				"name": "Response on Covid-19.",
+				"link": "/projects/water-sanitation",
+				"hashLink": "/projects/water-sanitation#covid",
+				"end": false,
+				"hash": true
 			}
 		]
 	},

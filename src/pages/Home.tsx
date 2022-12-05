@@ -18,33 +18,44 @@ const Home: FC<IHome> = () => {
 			{/* <NewsBanner /> */}
 			<SectionWrapper>
 				<div
-					className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center my-10"
+					className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-start my-10"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 				>
 					<div data-aos="fade-up" data-aos-duration="1000">
-						<h2 className="text-darkBlue text-2xl font-semibold">
-							Who We Are
-						</h2>
-						<div className="my-6 space-y-8">
+						<div className="my-6 space-y-4">
+							<h2 className="text-darkBlue text-xl font-semibold">
+								COMMUNITY INFORMATION DEVELOPMENT INITIATIVE
+								(CIDI)
+							</h2>
 							<p className="text-textGray text-sm leading-[27px]">
-								Community Information Development Initiatives
-								(CIDI) is a non governmental organisation based
-								in Tanzania mainland . CIDI was registered
-								National NGO under NGO Act of the law of united
-								republic of Tanzania under ministry of Health,
-								Community Development,Gender,Eldery and
-								Children.
+								A non-profit organization dedicated to serving
+								marginalized population groups throughout
+								Tanzania.
 							</p>
 							<p className="text-textGray text-sm leading-[27px]">
-								CIDI is an education and agricultural based
-								organisation with its main projects being
-								quality improved education and agructural
-								economic activities.
+								We are dedicated to support the government of
+								Tanzania to improve the life quality of
+								Tanzanians through improved access to quality
+								education and shared information required for
+								self-determination, community empowerment and
+								developmental support.
+							</p>
+
+							<h2 className="text-darkBlue text-xl font-semibold">
+								OUR STATEMENT
+							</h2>
+							<p className="text-textGray text-sm leading-[27px]">
+								As an organization we believe that God loves all
+								people equally and that his vision for this
+								world, is to be a place where all people are
+								cared for, where everyone’s needs are met and
+								everyone is respected and valued.
 							</p>
 							<p className="text-textGray text-sm leading-[27px]">
-								CIDI is for marginalised people Particularly
-								children ,youth ,and women
+								We believe that, our call is to make this vision
+								reality, prioritizing the most vulnerable and
+								neediest groups to bring help and hope.
 							</p>
 							<Link
 								to="/about"
@@ -80,14 +91,14 @@ const Home: FC<IHome> = () => {
 							</h2>
 						</div>
 						<div
-							className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-16"
+							className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-4 my-16"
 							data-aos="fade-up"
 							data-aos-duration="1000"
 						>
 							{services.map((service, index) => (
 								<div
 									key={index}
-									className={`flex items-start space-x-6 hover:bg-white p-9 hover:shadow-[0px_12px_24px_rgba(0,0,0,0.05)] duration-150 ${
+									className={`flex items-start space-x-6 h-full hover:bg-white p-9 hover:shadow-[0px_12px_24px_rgba(0,0,0,0.05)] duration-150 ${
 										service.highlight &&
 										"bg-white shadow-[0px_12px_24px_rgba(0,0,0,0.05)]"
 									}`}
@@ -97,20 +108,22 @@ const Home: FC<IHome> = () => {
 										src={service.icon}
 										alt={service.name}
 									/>
-									<div>
-										<h2 className="text-darkBlue text-lg sm:text-xl h-12 font-semibold">
+									<div className="flex flex-col items-start h-full justify-between">
+										<h2 className="text-darkBlue text-md sm:text-lg font-semibold">
 											{service.name}
 										</h2>
 										<p className="text-[15px] text-textBlue mt-4 mb-6">
 											{service.description}
 										</p>
-										<Link
-											className="text-darkBlue text-[15px] flex items-center space-x-2"
-											to={service.link}
-										>
-											<span>Learn More</span>
-											<BsArrowRight className="w-4 h-4" />
-										</Link>
+										<div className="mt-auto">
+											<Link
+												className="text-darkBlue text-[15px] flex items-center space-x-2"
+												to={service.link}
+											>
+												<span>Learn More</span>
+												<BsArrowRight className="w-4 h-4" />
+											</Link>
+										</div>
 									</div>
 								</div>
 							))}

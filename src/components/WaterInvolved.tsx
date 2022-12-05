@@ -1,8 +1,10 @@
 import { FC } from "react";
 
-interface IWaterInvolved {}
+interface IWaterInvolved {
+	id?: string;
+}
 
-const WaterInvolved: FC<IWaterInvolved> = () => {
+const WaterInvolved: FC<IWaterInvolved> = ({ id }) => {
 	return (
 		<>
 			<div className="pt-12">
@@ -99,7 +101,7 @@ const WaterInvolved: FC<IWaterInvolved> = () => {
 							{/* Content area */}
 							<div className="pt-12 sm:pt-16 lg:pt-20">
 								<h2 className="text-xl font-bold tracking-tight text-blackPrimary sm:text-2xl">
-									We are involved with;
+									How do we get involved;
 								</h2>
 								<ul className="list-disc ml-6 mt-6 space-y-6 text-gray-500">
 									<li className="text-sm md:text-base text-justify">
@@ -113,7 +115,14 @@ const WaterInvolved: FC<IWaterInvolved> = () => {
 									</li>
 									<li className="text-sm md:text-base text-justify">
 										To provide technical assistance to WASH
-										lines and WASH management bodies.
+										governance Systems, Structures and WASH
+										management bodies
+									</li>
+
+									<li className="text-sm md:text-base text-justify">
+										To prevent the spread of diseases due to
+										poor sanitation, unhygienic living
+										conditions and unsafe drinking water.
 									</li>
 									<li className="text-sm md:text-base text-justify">
 										Increase/maintain ODF through CLTS
@@ -128,6 +137,7 @@ const WaterInvolved: FC<IWaterInvolved> = () => {
 					</div>
 				</div>
 			</div>
+
 			<div className="">
 				<div className="relative bg-white">
 					<div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
@@ -143,19 +153,20 @@ const WaterInvolved: FC<IWaterInvolved> = () => {
 								</h2>
 								<ul className="list-disc ml-6 mt-6 space-y-3 text-gray-500">
 									<li className="text-sm md:text-base text-justify">
-										Building entrepreneurship in urban waste
-										management.
+										Building entrepreneurship in the
+										management of solid waste and liquid
+										waste in Slum areas.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										Demand creation for WASH services.
+										Demand creation for WASH services and
+										Hygiene promotion.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										Introduce an end-to-end desludging
-										service;
+										Designing and construction of WASH
+										infrastructures and post construction
+										support services.
 									</li>
-									<li className="text-sm md:text-base text-justify">
-										WASH infrastructures
-									</li>
+
 									<li className="text-sm md:text-base text-justify">
 										WASH governance regulations and
 										enforcement:
@@ -171,7 +182,9 @@ const WaterInvolved: FC<IWaterInvolved> = () => {
 										Social sanitation Marketing.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										We promote waste recycling and reuse.
+										Design and implementation of sustainable
+										waste management modal, Waste Treatment,
+										recycling, reuse or disposal.
 									</li>
 								</ul>
 							</div>
@@ -250,7 +263,7 @@ const WaterInvolved: FC<IWaterInvolved> = () => {
 												</p>
 											</div>
 
-											<footer className="mt-4">
+											<footer className="mt-4" id={id}>
 												<p className="text-base font-semibold text-greenPrimary">
 													CIDI-Wash
 												</p>

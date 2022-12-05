@@ -4,12 +4,14 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 interface IPageIntro {
 	name: string;
+    id?: string;
 }
 
-const PageIntro: FC<IPageIntro> = ({ name }) => {
+const PageIntro: FC<IPageIntro> = ({ name, id }) => {
 	return (
 		<SectionWrapper>
 			<div
+                id={id}
 				className="w-full max-w-[594px] mx-auto py-12 sm:py-28 flex items-center flex-col"
 				data-aos="fade-up"
 				data-aos-duration="1000"
