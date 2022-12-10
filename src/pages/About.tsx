@@ -89,7 +89,7 @@ const About: FC<IAbout> = () => {
 							</h1>
 							<p className="text-lightText text-[15px] max-w-[668px] leading-[27px] mx-auto">
 								To transform the lives of children, youth and
-								community a large through provision of quality
+								community at large through provision of quality
 								education and shared information required for
 								self-determination and developmental support.
 							</p>
@@ -112,37 +112,49 @@ const About: FC<IAbout> = () => {
 							CIDI Governance
 						</h2>
 						<p className="text-lightText text-justify">
-							CIDI is a member-based organization. Members meets
-							once annually during Annual General Assembly or
-							extra ordinary meeting. It has a Board with seven
-							members who meet once after every six months, but do
-							meet at any time when a need arises. The
-							organization has a secretariat that are overseeing
-							implementation of daily activities of the
-							organization. Additionally, CIDI has a team of 4
-							multidisciplinary experts who forms Technical
-							Advisory Committee that advice the secretariat on
-							all technical matters regularly.
+							CIDI AND WASH AFRICA is a member-based organization
+							with its supreme decision makers vested to its
+							members. Members meets once annually during Annual
+							General Assembly or extra ordinary meeting. It has a
+							Board with twelve members who meet once after every
+							six months, but do meet at any time when a need
+							arises. Reporting to the Board of Directors is the
+							Executive Director who is the head of secretariat
+							that oversees implementation of daily activities of
+							the organization. Additionally, CIDI AND WASH AFRICA
+							has a team of 4 multidisciplinary experts who forms
+							Technical Advisory Committee that advice the
+							secretariat on all technical matters regularly and
+							also advises the Board of Directors. The executive
+							director is supported by seven key technical staff
+							for running activities of the organization supported
+							by five volunteers.
 						</p>
 						<p
 							className="text-lightText mt-6 text-justify"
 							id="finance"
 						>
-							CIDI team is composed of qualified and experienced
-							experts and volunteers from various background
-							(Environmental, Agriculture, water resources,
-							nutritionist, social workers, medicine, WASH
-							business development specialist, gender, agronomist,
-							lawyers etc). CIDI has a system of quality planning
-							and controls at field, head office and partnerships
-							levels. Regular planning and review meeting which
-							involves key members of the organization are set up
-							and operational. Major decisions and approvals of
-							yearly plans and budgets are done in annual planning
-							meetings. The annual plans are then split into small
-							plans at monthly and quarterly levels including,
-							field/project level, head office and partners
-							planning levels.
+							CIDI AND WASH AFRICA team is composed of qualified
+							and experienced experts and volunteers from various
+							background Policy, human rights, Environmental,
+							Agriculture, water resources, nutritionist, gender
+							experts, WASH business development specialist,
+							gender, agronomist, lawyers etc.
+						</p>
+						<p
+							className="text-lightText mt-6 text-justify"
+							id="finance"
+						>
+							CIDI AND WASH AFRICA has a system of quality
+							planning and controls at field, head office and
+							partnerships levels. Regular planning and review
+							meeting which involves key members of the
+							organization are set up and operational. Major
+							decisions and approvals of yearly plans and budgets
+							are done in annual planning meetings. The annual
+							plans are then split into small plans at monthly and
+							quarterly levels including, field/project level,
+							head office and partners planning levels.
 						</p>
 					</div>
 				</SectionWrapper>

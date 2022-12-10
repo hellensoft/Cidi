@@ -10,7 +10,7 @@ interface IAgriculture {}
 const Agriculture: FC<IAgriculture> = () => {
 	return (
 		<div>
-			<PageIntro name="Agriculture, Food Security and Climate Change." />
+			<PageIntro name="AGRICULTURE AND FOOD SECURITY" />
 			<SectionWrapper>
 				<div>
 					<div
@@ -114,33 +114,46 @@ const Agriculture: FC<IAgriculture> = () => {
 						<div>
 							<div className="">
 								<h2 className="text-xl font-bold tracking-tight text-blackPrimary sm:text-2xl">
-									What CIDI has done to contribute in
-									addressing agriculture challenges in
-									Tanzania.
+									What have we done
 								</h2>
-								<ul className="list-disc ml-6 mt-6 space-y-6 text-gray-500">
+								<ul className="list-disc ml-6 mt-4 space-y-4 text-gray-500">
 									<li className="text-sm md:text-base text-justify">
 										CIDI Founder members and affiliated
 										partners have purchased 16 acres of land
 										at Mkuranga district to be used for
-										developing FFSs for nutritional crops
-										and livestock production, testing
-										agriculture technology before scaling up
-										to national scale, to make sustainable
-										change on a large scale through sharing
-										experimental findings, influencing,
-										advocacy and sector engagement.
+										developing Farm Field Schools (FFSs) for
+										crops and livestock production.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										In 2023 we intend to build crops and
-										livestock skills training centre that
-										will be used to train local communities,
-										groups of individuals on improved crops
-										and livestock keeping. The vision which
-										is expected to transform the lives of
-										many unemployed youth into commercial
-										agriculture and livestock keeping
-										self-employment.
+										The field is used for testing
+										agriculture technology before scaling up
+										to make sustainable change on a national
+										scale.
+									</li>
+									<li className="text-sm md:text-base text-justify">
+										Lessons learnt from our innovative
+										programs is used for influencing and
+										engagement of sector and development
+										partners.
+									</li>
+								</ul>
+							</div>
+							<div className="mt-6">
+								<h2 className="text-xl font-bold tracking-tight text-blackPrimary sm:text-2xl">
+									Our program plan for 2023
+								</h2>
+								<ul className="list-disc ml-6 mt-4 space-y-4 text-gray-500">
+									<li className="text-sm md:text-base text-justify">
+										To strengthen our services and reach for
+										more needy communities.
+									</li>
+									<li className="text-sm md:text-base text-justify">
+										We intend to build crops and livestock
+										skills training center that will be used
+										to train local communities, groups of
+										individuals on improved crops and
+										livestock keeping, baseline survey has
+										indicated there is a great demand.
 									</li>
 								</ul>
 							</div>
@@ -154,53 +167,60 @@ const Agriculture: FC<IAgriculture> = () => {
 						<div>
 							<div className="">
 								<h2 className="text-xl font-bold tracking-tight text-blackPrimary sm:text-2xl">
-									We are involved with;
+									How do we get involved
 								</h2>
 								<ul className="list-disc ml-6 mt-6 space-y-6 text-gray-500">
 									<li className="text-sm md:text-base text-justify">
-										Improving Entrepreneurship Skills for
-										livestock, food and cash crops for
-										smallholder farmers.
+										We work with small scale farmers to
+										improve entrepreneurship skills in
+										livestock, food and cash crops
+										production.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										Organize small scale farmers to form
-										producer network for them to
-										collectively bargain for the better
-										price of their produce in order to
-										benefit from their surplus production.
+										We work to support and coordinate small
+										scale farmers to form producer groups
+										and network for collective bargain of
+										better price of their produce to benefit
+										from their surplus production.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										Providing technical advice to small
-										scale farmer on better agricultural
-										practice, production innovations, and
-										improved farm inputs such as certified
-										seeds, pesticides/fertilizer and follow
-										up on activities.
+										We provide technical support and advice
+										to small scale farmer on better
+										agricultural practice, production
+										innovations, and improved farm inputs
+										such as certified seeds,
+										pesticides/fertilizer and follow up on
+										activities.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										Training small scale farmers and
-										farmers’ institutions on field-based
-										production (FFSs), Pre- and Post-harvest
-										losses, primary processing/value
-										addition, branding, handling,
-										distribution, improved access to
-										financing, market linkages and value
+										We offer trainings to small scale
+										farmers and farmers’ institutions on
+										field-based production (FFSs), Pre- and
+										Post-harvest losses, primary
+										processing/value addition, branding,
+										handling, distribution, improved access
+										to financing, market linkages and value
 										chain.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										Advocacy and support implementation of
-										agricultural policy.
+										We carry out advocacy to local, national
+										and international development partners
+										to influence investment in agriculture
+										sector, support and influence
+										implementation of agricultural policy.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										Inventing /adopting and scaling up and
-										financing value added agricultural
+										We work to support small scale farmers
+										to invent /adopt and scale up and
+										finance value added agricultural
 										practices such as irrigation/watering,
 										harvesting, drying, processing etc. to
 										our network farmers.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										Strengthening smallholder famers to
-										track expenditure of government budget
+										We also work to strengthening the
+										capacity for smallholder famers to track
+										expenditure of government budget
 										allocated for agriculture (PETS) to
 										increase social accountability
 										monitoring in Agriculture sector.
@@ -258,47 +278,47 @@ const Agriculture: FC<IAgriculture> = () => {
 					className="py-24 max-w-full"
 					data-aos="fade-up"
 					data-aos-duration="1000"
-				 >
-					<h1 className="text-2xl sm:text-3xl text-darkBlue font-semibold">
-						Giving back to the Community
+				>
+					<h1 className="text-2xl sm:text-3xl text-darkBluedark font-semibold">
+                    How do we impact communities.
 					</h1>
-					<p className="text-md mt-4 md:text-lg text-justify text-gray-500">
+					{/* <p className="text-md mt-4 md:text-lg text-justify text-gray-500">
 						CIDI thought of giving back to the community by doing
 						the following: -
-					</p>
+					</p> */}
 					<ul
 						className="list-disc ml-4 md:ml-16 mt-6 space-y-6 text-gray-500"
 						data-aos="fade-up"
 						data-aos-duration="1000"
 					>
 						<li className="text-sm md:text-base text-justify">
-							CIDI, would work in collaboration with the local
-							community in the implementation of the project.
+							Communities learn how to develop community projects
+							(planning), financing, implementation, monitoring,
+							evaluation and linkage to government for support and
+							sustainability.
 						</li>
 						<li className="text-sm md:text-base text-justify">
-							Create employment to the people of Miswe especially
-							for the young adults as livestock production and
-							crop production makes a significant contribution to
-							the livelihoods of the poor and offers substantial
-							scope for expansion to alleviate poverty
+							Selected farmers are trained to provide
+							paraprofessional skills to their fellow farmers in
+							their localities hence reduce reliance on government
+							extension officers.
 						</li>
 						<li className="text-sm md:text-base text-justify">
-							Livestock and crop production would be introduced to
-							the people of Miswe as an alternative income, food
-							and nutrition to their homes
+							Production based trainings are accorded to small
+							scale farmers and livestock keepers to improve their
+							production and life quality.
 						</li>
 						<li className="text-sm md:text-base text-justify">
-							Indirect benefits are also likely to accrue, in
-							terms of expanded markets for labour intensive,
-							non-tradable local goods and services, stemming from
-							the increased incomes and expenditures of livestock
-							producers and farmers.
+							Increased self-employment in agriculture and
+							livestock production to majority youth.
 						</li>
 						<li className="text-sm md:text-base text-justify">
-							Knowledge, information, updated news on new methods,
-							crops, vaccines, training and technological
-							knowledge would be introduced in the management of
-							livestock and crop production.
+							Our service has become a knowledge hub where
+							communities come from various places to gain
+							practical knowledge, information, skills,
+							experience, updates on new methods, crops, vaccines,
+							training and technological knowledge to improve
+							crops and livestock production.
 						</li>
 					 </ul>
 						</div>

@@ -84,10 +84,10 @@
 			},
 			{
 				"name": "Child Protection and Rights",
-				"link": "/projects#",
+				"link": "/projects/child-rights",
 				"hashLink": "/projects#opportunities",
 				"end": false,
-				"hash": true
+				"hash": false
 			},
 			{
 				"name": "Response on Covid-19.",

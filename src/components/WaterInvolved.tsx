@@ -101,28 +101,39 @@ const WaterInvolved: FC<IWaterInvolved> = ({ id }) => {
 							{/* Content area */}
 							<div className="pt-12 sm:pt-16 lg:pt-20">
 								<h2 className="text-xl font-bold tracking-tight text-blackPrimary sm:text-2xl">
-									How do we get involved;
+									How do we get involved
 								</h2>
+								<p className="text-justify text-base md:text-md text-textGray font-medium">
+									CIDI has partnered with WASH Africa to
+									promote improved access in sustainable water
+									supply, Sanitation and Hygiene facilities
+									and services throughout Tanzania.
+								</p>
+								<p className="text-justify text-base md:text-md text-textGray font-medium">
+									We are working closely with WASH sector and
+									development partners to support Tanzania
+									Government achieve national WASH targets in
+									five priority areas:
+								</p>
 								<ul className="list-disc ml-6 mt-6 space-y-6 text-gray-500">
 									<li className="text-sm md:text-base text-justify">
-										To ensure improved sustainable access to
-										safe water, sanitation and hygiene in
+										Improved sustainable access to safe
+										water, sanitation and hygiene in
 										communities.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										To improve WASH facilities and services
-										in schools, HCFs, HHs and Public.
+										Improve WASH facilities and services in
+										schools, HCFs, HHs and Public.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										To provide technical assistance to WASH
+										Improved technical assistance to WASH
 										governance Systems, Structures and WASH
-										management bodies
+										management bodies.
 									</li>
 
 									<li className="text-sm md:text-base text-justify">
-										To prevent the spread of diseases due to
-										poor sanitation, unhygienic living
-										conditions and unsafe drinking water.
+										Community empowerment on WASH diseases
+										prevention.
 									</li>
 									<li className="text-sm md:text-base text-justify">
 										Increase/maintain ODF through CLTS
@@ -153,13 +164,12 @@ const WaterInvolved: FC<IWaterInvolved> = ({ id }) => {
 								</h2>
 								<ul className="list-disc ml-6 mt-6 space-y-3 text-gray-500">
 									<li className="text-sm md:text-base text-justify">
-										Building entrepreneurship in the
-										management of solid waste and liquid
-										waste in Slum areas.
+										Building entrepreneurship in waste
+										management.
 									</li>
 									<li className="text-sm md:text-base text-justify">
-										Demand creation for WASH services and
-										Hygiene promotion.
+										Community demand creation for WASH
+										services and ownership.
 									</li>
 									<li className="text-sm md:text-base text-justify">
 										Designing and construction of WASH
@@ -183,8 +193,7 @@ const WaterInvolved: FC<IWaterInvolved> = ({ id }) => {
 									</li>
 									<li className="text-sm md:text-base text-justify">
 										Design and implementation of sustainable
-										waste management modal, Waste Treatment,
-										recycling, reuse or disposal.
+										waste management modal.
 									</li>
 								</ul>
 							</div>

@@ -23,7 +23,7 @@ const Education: FC<IEducation> = () => {
 								alt="students at school"
 							/>
 							<h2 className="text-darkBlue mt-16 font-semibold text-xl sm:text-[36px]">
-								Situation Anaylsis in Tanzania
+								EDUCATION SITUATION IN TANZANIA
 							</h2>
 							<p className="text-textBlue mt-16 mb-10 text-justify">
 								CIDI believes that good quality publicly funded

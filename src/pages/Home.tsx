@@ -29,33 +29,37 @@ const Home: FC<IHome> = () => {
 								(CIDI)
 							</h2>
 							<p className="text-textGray text-sm leading-[27px]">
-								A non-profit organization dedicated to serving
-								marginalized population groups throughout
-								Tanzania.
-							</p>
-							<p className="text-textGray text-sm leading-[27px]">
-								We are dedicated to support the government of
-								Tanzania to improve the life quality of
-								Tanzanians through improved access to quality
-								education and shared information required for
-								self-determination, community empowerment and
-								developmental support.
+								<span className="font-semibold text-darkBlue">
+									CIDI
+								</span>{" "}
+								is a non-profit organization dedicated to
+								serving marginalized population groups
+								throughout Tanzania.
 							</p>
 
 							<h2 className="text-darkBlue text-xl font-semibold">
-								OUR STATEMENT
+								WHO WE ARE
 							</h2>
 							<p className="text-textGray text-sm leading-[27px]">
-								As an organization we believe that God loves all
-								people equally and that his vision for this
-								world, is to be a place where all people are
-								cared for, where everyone’s needs are met and
-								everyone is respected and valued.
+								“CIDI “stands for Community Information
+								Development Initiatives”
 							</p>
-							<p className="text-textGray text-sm leading-[27px]">
-								We believe that, our call is to make this vision
-								reality, prioritizing the most vulnerable and
-								neediest groups to bring help and hope.
+							<p className="text-textGray text-sm leading-[27px] text-justify">
+								CIDI is a registered National NGO under NGO Act
+								No. 24, 2002 of the Laws of United Republic of
+								Tanzania by the Ministry of Health, Community
+								Development, Gender and Children with a
+								registration No. 00NGO/R/2765.
+							</p>
+							<p className="text-textGray text-sm leading-[27px] text-justify">
+								We work to contribute in solving community
+								challenges through implementing innovative
+								programs related to quality education,
+								agriculture, food security, climate change,
+								child rights protection and health promotion,
+								sharing lessons leant from our programs before
+								scaling up through innovation, influencing,
+								advocacy and sectoral engagement.
 							</p>
 							<Link
 								to="/about"

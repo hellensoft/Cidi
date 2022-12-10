@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import FoooterBanner from "../components/FooterBanner";
 import PageIntro from "../components/PageIntro";
 import { Formik, Form, Field } from "formik";
@@ -6,6 +6,9 @@ import { Formik, Form, Field } from "formik";
 interface IVolunteer {}
 
 const Volunteer: FC<IVolunteer> = () => {
+	const [isSubmitted, setIsSubmitted] = useState(false);
+	const [loading, setLoading] = useState(false);
+
 	return (
 		<div>
 			<PageIntro name="Volunteer Form" />
@@ -16,13 +19,47 @@ const Volunteer: FC<IVolunteer> = () => {
 							firstName: "",
 							lastName: "",
 							email: "",
-							addess: "",
+							address: "",
 							phoneNumber: "",
 							dob: "",
 							message: "",
-							cv: null,
+							cv: null as File | null,
 						}}
-						onSubmit={(values) => console.log(values)}
+						onSubmit={async (values) => {
+							setLoading(true);
+							const toBase64 = (file: File) =>
+								new Promise((resolve, reject) => {
+									const reader = new FileReader();
+									reader.readAsDataURL(file);
+									reader.onload = () =>
+										resolve(reader.result);
+									reader.onerror = (error) => reject(error);
+								});
+
+							const file = await toBase64(values.cv as File);
+							fetch(
+								`${process.env.REACT_APP_BACKEND_URL}/cidi/cidi-volunteer`,
+								{
+									method: "POST",
+									headers: {
+										"Content-Type": "application/json",
+									},
+									body: JSON.stringify({
+										...values,
+										cv: file,
+									}),
+								}
+							)
+								.then((res) => res.json())
+								.then((res) => {
+									console.log(res);
+									setLoading(false);
+								})
+								.catch((err) => {
+									console.log(err);
+									setLoading(false);
+								});
+						}}
 					>
 						{({ setFieldValue }) => (
 							<Form className="space-y-8">
