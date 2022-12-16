@@ -111,8 +111,8 @@ const CidiContribution: FC<ICidiContribution> = () => {
 								<div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
 									<img
 										className="absolute inset-0 h-full w-full object-cover"
-										src="/images/teachers.jpeg"
-										alt="teachers"
+										src="/images/child class.jpeg"
+										alt="children in class"
 									/>
 									<div className="absolute inset-0 bg-darkBluelight mix-blend-multiply" />
 									<div className="absolute inset-0 bg-gradient-to-t from-darkBluedark via-darkBluedark opacity-90" />
@@ -200,7 +200,7 @@ const CidiContribution: FC<ICidiContribution> = () => {
 								<div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
 									<img
 										className="absolute inset-0 h-full w-full object-cover"
-										src="/images/teachers.jpeg"
+										src="/images/children.jpeg"
 										alt="teachers"
 									/>
 									<div className="absolute inset-0 bg-darkBluelight mix-blend-multiply" />

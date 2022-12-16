@@ -247,7 +247,7 @@ const WaterInvolved: FC<IWaterInvolved> = ({ id }) => {
 								<div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
 									<img
 										className="absolute inset-0 h-full w-full object-cover"
-										src="/images/Water.jpeg"
+										src="/images/watersearch.jpeg"
 										alt="teachers"
 									/>
 									<div className="absolute inset-0 bg-darkBluelight mix-blend-multiply" />

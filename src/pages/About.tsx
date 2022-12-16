@@ -112,7 +112,7 @@ const About: FC<IAbout> = () => {
 							CIDI Governance
 						</h2>
 						<p className="text-lightText text-justify">
-							CIDI AND WASH AFRICA is a member-based organization
+							Community Information Development Initiatives (CIDI) is a member-based organization
 							with its supreme decision makers vested to its
 							members. Members meets once annually during Annual
 							General Assembly or extra ordinary meeting. It has a
@@ -121,7 +121,7 @@ const About: FC<IAbout> = () => {
 							arises. Reporting to the Board of Directors is the
 							Executive Director who is the head of secretariat
 							that oversees implementation of daily activities of
-							the organization. Additionally, CIDI AND WASH AFRICA
+							the organization. Additionally, CIDI
 							has a team of 4 multidisciplinary experts who forms
 							Technical Advisory Committee that advice the
 							secretariat on all technical matters regularly and
@@ -134,7 +134,7 @@ const About: FC<IAbout> = () => {
 							className="text-lightText mt-6 text-justify"
 							id="finance"
 						>
-							CIDI AND WASH AFRICA team is composed of qualified
+							CIDI  team is composed of qualified
 							and experienced experts and volunteers from various
 							background Policy, human rights, Environmental,
 							Agriculture, water resources, nutritionist, gender
@@ -145,7 +145,7 @@ const About: FC<IAbout> = () => {
 							className="text-lightText mt-6 text-justify"
 							id="finance"
 						>
-							CIDI AND WASH AFRICA has a system of quality
+							CIDI has a system of quality
 							planning and controls at field, head office and
 							partnerships levels. Regular planning and review
 							meeting which involves key members of the

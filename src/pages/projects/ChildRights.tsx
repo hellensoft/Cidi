@@ -10,7 +10,7 @@ interface IChildRights {}
 const ChildRights: FC<IChildRights> = () => {
 	return (
 		<div>
-			<PageIntro name="CHILD RIGHTS AND PROTECTION" />
+			<PageIntro name="Child Protection and Child Rights governance" />
 			<SectionWrapper>
 				<div>
 					<div
@@ -19,18 +19,18 @@ const ChildRights: FC<IChildRights> = () => {
 						data-aos-duration="1000"
 					>
 						<img
-							src="/images/happy-black-family-toddler-pointing-laptop-screen-design-space.jpeg"
-							alt="agriculture images"
+							src="/images/happy family.jpeg"
+							alt="Children rights"
 							className="w-full aspect-[10/7] object-cover object-right"
 						/>
 						<img
-							src="/images/agriculture-2.png"
-							alt="agriculture images"
+							src="/images/class.png"
+							alt="Children rights"
 							className="hidden xs:inline-block h-full object-cover object-center"
 						/>
 					</div>
 					<h2 className="text-darkBlue mt-16 font-semibold text-xl sm:text-[36px]">
-						CHILD RIGHTS SITUATION IN TANZANIA
+						Child Right Situation in Tanzania
 					</h2>
 					<p
 						className="text-textBlue mt-16 max-w-[1096px] text-justify mx-auto"
@@ -44,7 +44,7 @@ const ChildRights: FC<IChildRights> = () => {
 						emotionally abused.
 					</p>
 					<p
-						className="text-textBlue mt-6 mb-16 max-w-[1096px] text-justify mx-auto"
+						className="text-textBlue mt-6 mb-10 max-w-[1096px] text-justify mx-auto"
 						data-aos="fade-up"
 						data-aos-duration="1000"
 					>
@@ -55,7 +55,7 @@ const ChildRights: FC<IChildRights> = () => {
 						also generally accepted in families.
 					</p>
 					<p
-						className="text-textBlue mt-16 max-w-[1096px] text-justify mx-auto"
+						className="text-textBlue mt-6 max-w-[1096px] text-justify mx-auto"
 						data-aos="fade-up"
 						data-aos-duration="1000"
 					>
@@ -64,7 +64,7 @@ const ChildRights: FC<IChildRights> = () => {
 						where to go for care, treatment and support.
 					</p>
 					<p
-						className="text-textBlue mt-6 mb-16 max-w-[1096px] text-justify mx-auto"
+						className="text-textBlue mt-6 mb-10 max-w-[1096px] text-justify mx-auto"
 						data-aos="fade-up"
 						data-aos-duration="1000"
 					>
@@ -130,7 +130,7 @@ const ChildRights: FC<IChildRights> = () => {
 							<div className="w-full h-auto aspect-square rounded overflow-hidden">
 								<img
 									className="w-full h-full object-cover object-center"
-									src="/images/agriculture-woman.jpeg"
+									src="/images/charity.jpeg"
 									alt="plants"
 								/>
 							</div>
@@ -138,9 +138,9 @@ const ChildRights: FC<IChildRights> = () => {
 						<div>
 							<div className="">
 								<h2 className="text-xl font-bold tracking-tight text-blackPrimary sm:text-2xl">
-									HOW DO WE GET INVOLVED.
+									How do we get involved.
 								</h2>
-								<p className="text-textBlue mt-6 mb-16 max-w-[1096px] text-justify mx-auto">
+								<p className="text-textBlue mt-6 mb-10 max-w-[1096px] text-justify mx-auto">
 									We work supporting the Ministry of Gender,
 									elder and children achieving the national
 									target through implementing various child
@@ -282,7 +282,7 @@ const ChildRights: FC<IChildRights> = () => {
 							<div className="w-full h-auto aspect-square rounded overflow-hidden">
 								<img
 									className="w-full h-full object-cover object-center"
-									src="/images/mbuzi.jpeg"
+									src="/images/children.jpeg"
 									alt="plants"
 								/>
 							</div>
@@ -291,7 +291,8 @@ const ChildRights: FC<IChildRights> = () => {
 				</div>
 
 				{/* GIVING BACKK TO THE CUSTOMER */}
-				<div
+				{/* <div
+
 					className="py-12 max-w-5xl"
 					data-aos="fade-up"
 					data-aos-duration="1000"
@@ -302,7 +303,7 @@ const ChildRights: FC<IChildRights> = () => {
 					{/* <p className="text-md mt-4 md:text-lg text-justify text-gray-500">
 						CIDI thought of giving back to the community by doing
 						the following: -
-					</p> */}
+					</p> 
 					<ul
 						className="list-disc ml-4 md:ml-16 mt-6 space-y-6 text-gray-500"
 						data-aos="fade-up"
@@ -338,7 +339,7 @@ const ChildRights: FC<IChildRights> = () => {
 							crops and livestock production.
 						</li>
 					</ul>
-				</div>
+				</div> */}
 			</SectionWrapper>
 			<Faqs faqs={agriFaq} />
 			<FoooterBanner text="Help us Improve  Agriculture Livelihood" />
