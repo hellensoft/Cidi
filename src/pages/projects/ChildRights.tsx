@@ -130,8 +130,8 @@ const ChildRights: FC<IChildRights> = () => {
 							<div className="w-full h-auto aspect-square rounded overflow-hidden">
 								<img
 									className="w-full h-full object-cover object-center"
-									src="/images/charity.jpeg"
-									alt="plants"
+									src="/images/Charity.jpeg"
+									alt="Children right"
 								/>
 							</div>
 						</div>
@@ -283,7 +283,7 @@ const ChildRights: FC<IChildRights> = () => {
 								<img
 									className="w-full h-full object-cover object-center"
 									src="/images/children.jpeg"
-									alt="plants"
+									alt="Children right"
 								/>
 							</div>
 						</div>
