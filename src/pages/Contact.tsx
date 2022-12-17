@@ -83,7 +83,7 @@ const Contact: FC<IContact> = () => {
 								</div>
 								<div className="text-center mt-6">
 									<h1 className="text-2xl font-semibold text-darkBlue mb-2">
-										Form Submitted
+										Request Submitted
 									</h1>
 									<p className="text-gray-500">
 										Thank you for contacting us. We will get

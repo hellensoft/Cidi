@@ -32,11 +32,10 @@ const Donation: FC<IDonation> = () => {
 							</div>
 							<div className="text-center mt-6">
 								<h1 className="text-2xl font-semibold text-darkBlue mb-2">
-									Form Submitted
+									Donation received
 								</h1>
 								<p className="text-gray-500">
-									Thank you for contacting us. We will get
-									back to you in no time.
+									Thank you for your donation. Kindly visit CIDI offices to handin your donation.
 								</p>
 							</div>
 						</div>
@@ -196,7 +195,7 @@ const Donation: FC<IDonation> = () => {
 											htmlFor="companyName"
 											className="text-darkBlue text-lg sm:text-xl"
 										>
-											Conpany Name
+											Company Name
 										</label>
 										<Field
 											name="companyName"

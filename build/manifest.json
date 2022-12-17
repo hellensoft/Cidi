@@ -1,0 +1,15 @@
+{
+  "short_name": "Cidi Site",
+  "name": "Create React App Project",
+  "icons": [
+    {
+      "src": "/images/cidi-logo.png",
+      "type": "image/png",
+      "sizes": "144x147"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
