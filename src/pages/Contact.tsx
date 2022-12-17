@@ -101,7 +101,7 @@ const Contact: FC<IContact> = () => {
 									message: "",
 								}}
 								onSubmit={(values) => {
-                                    setLoading(true);
+									setLoading(true);
 									fetch(
 										`${process.env.REACT_APP_BACKEND_URL}/cidi/cidi-contact`,
 										{
@@ -119,7 +119,7 @@ const Contact: FC<IContact> = () => {
 											setIsSubmitted(true);
 										})
 										.catch((err) => {
-											setErrorMessage(err.error.message);
+											setErrorMessage(err.message);
 											setLoading(false);
 										});
 								}}
@@ -164,7 +164,11 @@ const Contact: FC<IContact> = () => {
 										className="block w-full border-0 pb-1 border-b border-textBlue text-sm sm:text-base focus:border-greenPrimary focus:ring-0"
 										placeholder="Message"
 									/>
-									{errorMessage && <p className="text-red-600 font-medium">{errorMessage}</p>}
+									{errorMessage && (
+										<p className="text-red-600 font-medium">
+											{errorMessage}
+										</p>
+									)}
 									<div className="pt-6">
 										<button
 											type="submit"
