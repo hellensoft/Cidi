@@ -13,7 +13,6 @@ interface IHeader {}
 
 const Header: FC<IHeader> = () => {
 	const { pathname } = useLocation();
-    console.log(useLocation())
 	const [openSideBar, setOpenSideBar] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
 

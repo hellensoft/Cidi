@@ -7,14 +7,12 @@
 		"event": "Kisarawe Farmer's Market",
 		"photo": "/images/farmers.jpeg"
 	},
+
 	{
-		"event": "Orphanage visit",
-		"photo": "/images/orphanage-visit.JPG"
+		"event": "Stars Academy School Graduation",
+		"photo": "/images/gradur.jpeg"
 	},
-	{
-		"event": "Kisarawe Farmer's Market",
-		"photo": "/images/cows.png"
-	},
+	
 	{
 		"event": "Stars Academy School Graduation",
 		"photo": "/images/teachers.jpeg"
@@ -36,7 +34,7 @@
 		"photo": "/images/education-image-2.png"
 	},
 	{
-		"event": "Kisarawe Farmer's Market",
+		"event": "Water sanitation and hygiene",
 		"photo": "/images/been-watered.jpeg"
 	}
 ]

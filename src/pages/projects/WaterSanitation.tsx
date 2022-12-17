@@ -26,8 +26,9 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 						/>
 					</div>
 					<div className="space-y-8 lg:ml-12">
-						<h1 className="text-darkBlue max-w-[480px] font-semibold text-2xl sm:text-[36px] mb-6">
-							WASH Situational context in Tanzania.
+						<h1 className="text-darkBlue max-w-[480px] font-semibold text-xl sm:text-2xl mb-6">
+							WATER, SANITATION AND HYGIENE (WASH) SITUATION IN
+							TANZANIA
 						</h1>
 						<p className="text-justify text-base md:text-md text-textGray font-medium">
 							It is estimated that Tanzania spends 70 per cent of
@@ -62,28 +63,41 @@ const WaterSanitation: FC<IWaterSanitation> = () => {
 					data-aos-duration="1000"
 				>
 					<h1 className="text-darkBlue max-w-[485px] font-semibold text-2xl sm:text-[36px] mb-6">
-						Response on COVID-19{" "}
+						COVID-19 RESPONSE.{" "}
 					</h1>
 					<p className="text-justify text-base md:text-md text-textGray">
-						Well-positioned to help communities respond to the
-						COVID-19 crisis and become more resilient. We act
-						quickly with customized approaches considering the
-						circumstances. To curb the spread of COVID-19
-						WASH-Africa promote handwashing and good hygiene
-						messages, bringing key sanitation and hygiene messages
-						to urban populations whose,
+						In the face of COVID-19 Pandemic, CIDI is working in
+						partnership with WASH Africa to support the government
+						of Tanzania in strengthening access to covid-19
+						immunization and promote uptake of the same through
+						innovative training and community awareness campaigns.
 					</p>
 					<p className="text-justify text-base md:text-md text-textGray my-5">
-						<span className="text-darkBlue font-semibold">
+						{/* <span className="text-darkBlue font-semibold">
 							WASH-Africa
-						</span>{" "}
-						is tailoring COVID-19 messages for different target
+						</span>{" "} */}
+						CIDI works to improve WASH facilities and services in
+						schools, healthcare facilities and communities as a
+						means to strengthen community systems response to
+						Covid-19.
+					</p>
+					<p className="text-justify text-base md:text-md text-textGray my-5">
+						To curb the spread of COVID-19, we work to promote
+						handwashing and good hygiene messages, bringing key
+						sanitation and hygiene messages to urban populations.
+					</p>
+					<p className="text-justify text-base md:text-md text-textGray my-5">
+						We are tailoring COVID-19 messages for different target
 						groups, including women, people with disabilities,
 						school children, youth, frontline workers, and facility
 						cleaners in public spaces (e.g., schools, health care
-						facilities, transport hubs and markets). WASH-Africa’s
-						Covid-19 Behavior Change Communication (BCC) strategy
-						includes,
+						facilities, transport hubs and markets).
+					</p>
+					<p className="text-justify text-base md:text-md text-textGray my-5">
+						Our approach is informed by other organizations’
+						coalition network members participating in behavioral
+						change communication (BCC) strategies across the country
+						from other foreign coutries.
 					</p>
 					<ul
 						className="list-disc ml-8 sm:ml-16 space-y-6 mt-10"
