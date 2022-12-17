@@ -9,28 +9,28 @@
 	{
 		"icon": "/images/svgs/education.svg",
 		"name": "Quality Education",
-		"description": "A child without education is like a bird without wings.",
+		"description": "A child without education is like a bird without wings..",
 		"link": "/projects/education",
 		"highlight": true
 	},
 	{
 		"icon": "/images/svgs/drop.svg",
 		"name": "Water, Hygiene & Sanitation (WASH)",  
-		"description": "Safe water, sanitation and hygiene in communities.",
+		"description": "Safe water, sanitation and hygiene in communities..",
 		"link": "/projects/water-sanitation",
 		"highlight": false
 	},
 	{
-		"icon": "/images/svgs/education.svg",
+		"icon": "/images/svgs/child-care.svg",
 		"name": "Child Protection and Child Rights Governance",
-		"description": "A child without education is like a bird without wings.",
+		"description": "Provision of services related to the protection of children from harm and the protection of all rights of children..",
 		"link": "/projects/education",
 		"highlight": false
 	},
 	{
-		"icon": "/images/svgs/drop.svg",
+		"icon": "/images/svgs/health-care.svg",
 		"name": "Health and Nutrition",
-		"description": "Safe water, sanitation and hygiene in communities.",
+		"description": "Raising awareness of the interrelationship between nutrition, exercise, physical activity and lifestyle for improving health across the lifespan..",
 		"link": "/projects/water-sanitation",
 		"highlight": false
 	}
