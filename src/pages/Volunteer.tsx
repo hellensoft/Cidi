@@ -61,7 +61,7 @@ const Volunteer: FC<IVolunteer> = () => {
 								formData.append("file", values.cv as File);
 
 								fetch(
-									`${process.env.REACT_APP_BACKEND_URL}/cidi/cidi-volunteer`,
+									`https://cidi-backend.vercel.app/cidi/cidi-volunteer`,
 									{
 										method: "POST",
 										body: formData,

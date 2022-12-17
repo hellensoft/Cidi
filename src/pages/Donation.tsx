@@ -61,7 +61,7 @@ const Donation: FC<IDonation> = () => {
 							onSubmit={(values) => {
 								setLoading(true);
 								fetch(
-									`${process.env.REACT_APP_BACKEND_URL}/cidi/cidi-donation`,
+									`https://cidi-backend.vercel.app/cidi/cidi-donation`,
 									{
 										method: "POST",
 										headers: {

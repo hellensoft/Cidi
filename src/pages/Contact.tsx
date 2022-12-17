@@ -103,7 +103,7 @@ const Contact: FC<IContact> = () => {
 								onSubmit={(values) => {
 									setLoading(true);
 									fetch(
-										`${process.env.REACT_APP_BACKEND_URL}/cidi/cidi-contact`,
+										`https://cidi-backend.vercel.app/cidi/cidi-contact`,
 										{
 											method: "POST",
 											headers: {
