@@ -58,7 +58,7 @@ const Contact: FC<IContact> = () => {
 				<div className="px-4 mb-12 lg:mb-0 lg:pr-[calc(((100vw-1222px)/2))]" data-aos="fade-up" data-aos-duration="1000">
 					<div className="lg:pr-4 lg:pl-12 flex flex-col justify-center h-full">
 						<p className="text-textBlue">CONTACT US</p>
-						<h1 className="text-4xl text-darkBlue font-semibold mb-8  mt-2">
+						<h1 className="text-4zxl text-darkBlue font-semibold mb-8  mt-2">
 							Have Questions?
 							<br /> Get in Touch
 						</h1>
