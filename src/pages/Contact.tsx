@@ -4,7 +4,8 @@ import PageIntro from "../components/PageIntro";
 import SectionWrapper from "../components/SectionWrapper";
 import contacts from "../data/contact.json";
 import { IoSend } from "react-icons/io5";
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as yup from "yup";
 import { BsCheckCircle } from "react-icons/bs";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
@@ -100,10 +101,28 @@ const Contact: FC<IContact> = () => {
 									phoneNumber: "",
 									message: "",
 								}}
+								validationSchema={yup.object({
+									firstName: yup
+										.string()
+										.required("First name is required"),
+									lastName: yup
+										.string()
+										.required("Last name is required"),
+									email: yup
+										.string()
+										.email("Invalid email address")
+										.required("Email is required"),
+									phoneNumber: yup
+										.string()
+										.required("Phone number is required"),
+									message: yup
+										.string()
+										.required("Message is required"),
+								})}
 								onSubmit={(values) => {
 									setLoading(true);
 									fetch(
-										`https://cidi-backend.vercel.app/cidi/cidi-contact`,
+										`${process.env.REACT_APP_BACKEND_URL}/cidi/cidi-contact`,
 										{
 											method: "POST",
 											headers: {
@@ -125,7 +144,7 @@ const Contact: FC<IContact> = () => {
 								}}
 							>
 								<Form className="space-y-6">
-									<div className="grid xs:grid-cols-2 gap-8">
+									<div className="grid xs:grid-cols-2 gap-8 gap-y-2">
 										<Field
 											type="text"
 											name="firstName"
@@ -140,8 +159,22 @@ const Contact: FC<IContact> = () => {
 											className="block w-full border-0 pb-1 border-b border-textBlue text-sm sm:text-base focus:border-greenPrimary focus:ring-0"
 											placeholder="Last Name"
 										/>
+										<div className="pl-3">
+											<ErrorMessage
+												name="firstName"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
+										<div className="pl-3">
+											<ErrorMessage
+												name="lastName"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
 									</div>
-									<div className="grid xs:grid-cols-2 gap-8">
+									<div className="grid xs:grid-cols-2 gap-8 gap-y-2">
 										<Field
 											type="email"
 											name="email"
@@ -150,12 +183,26 @@ const Contact: FC<IContact> = () => {
 											placeholder="Email Address"
 										/>
 										<Field
-											type="text"
+											type="number"
 											name="phoneNumber"
 											id="phoneNumber"
 											className="block w-full border-0 pb-1 border-b border-textBlue text-sm sm:text-base focus:border-greenPrimary focus:ring-0"
 											placeholder="Phone Number"
 										/>
+										<div className="pl-3">
+											<ErrorMessage
+												name="email"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
+										<div className="pl-3">
+											<ErrorMessage
+												name="phoneNumber"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
 									</div>
 									<Field
 										as="textarea"
@@ -164,6 +211,13 @@ const Contact: FC<IContact> = () => {
 										className="block w-full border-0 pb-1 border-b border-textBlue text-sm sm:text-base focus:border-greenPrimary focus:ring-0"
 										placeholder="Message"
 									/>
+									<div className="pl-3 mt-[8px_!important]">
+										<ErrorMessage
+											name="message"
+											component="p"
+											className="text-red-500 text-sm"
+										/>
+									</div>
 									{errorMessage && (
 										<p className="text-red-600 font-medium">
 											{errorMessage}

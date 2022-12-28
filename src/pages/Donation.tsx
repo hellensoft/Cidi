@@ -1,7 +1,8 @@
 import { FC, useState } from "react";
 import FoooterBanner from "../components/FooterBanner";
 import PageIntro from "../components/PageIntro";
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as yup from "yup";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { BsCheckCircle } from "react-icons/bs";
 
@@ -35,7 +36,8 @@ const Donation: FC<IDonation> = () => {
 									Donation received
 								</h1>
 								<p className="text-gray-500">
-									Thank you for your donation. Kindly visit CIDI offices to handin your donation.
+									Thank you for your donation. Kindly visit
+									CIDI offices to handin your donation.
 								</p>
 							</div>
 						</div>
@@ -46,7 +48,7 @@ const Donation: FC<IDonation> = () => {
 								lastName: "",
 								donationType: "Cash",
 								currencyType: "tzs",
-								amount: 0,
+								amount: undefined,
 								donorNote: "",
 								companyName: "",
 								email: "",
@@ -58,10 +60,48 @@ const Donation: FC<IDonation> = () => {
 								state: "",
 								zipCode: "",
 							}}
+							validationSchema={yup.object({
+								firstName: yup
+									.string()
+									.required("First name is required"),
+								lastName: yup
+									.string()
+									.required("Last name is required"),
+								amount: yup
+									.number()
+									.min(1000, "Amount must be at least 1000")
+									.required("Amount is required"),
+								donorNote: yup
+									.string()
+									.required("Donor note is required"),
+								companyName: yup
+									.string()
+									.required("Company name is required"),
+								email: yup
+									.string()
+									.email("Invalid email address")
+									.required("Email is required"),
+								phoneNumber: yup
+									.string()
+									.required("Phone number is required"),
+								street1: yup
+									.string()
+									.required("Street 1 is required"),
+								street2: yup
+									.string()
+									.required("Street 2 is required"),
+								city: yup.string().required("City is required"),
+								state: yup
+									.string()
+									.required("State is required"),
+								zipCode: yup
+									.string()
+									.required("Zip code is required"),
+							})}
 							onSubmit={(values) => {
 								setLoading(true);
 								fetch(
-									`https://cidi-backend.vercel.app/cidi/cidi-donation`,
+									`${process.env.REACT_APP_BACKEND_URL}/cidi/cidi-donation`,
 									{
 										method: "POST",
 										headers: {
@@ -90,7 +130,7 @@ const Donation: FC<IDonation> = () => {
 										>
 											Donor Name
 										</label>
-										<div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+										<div className="grid grid-cols-1 sm:grid-cols-2 gap-8 gap-y-2">
 											<Field
 												name="firstName"
 												id="firstName"
@@ -105,6 +145,20 @@ const Donation: FC<IDonation> = () => {
 												placeholder="Last Name"
 												className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 											/>
+											<div className="pl-3">
+												<ErrorMessage
+													name="firstName"
+													component="p"
+													className="text-red-500 text-sm"
+												/>
+											</div>
+											<div className="pl-3">
+												<ErrorMessage
+													name="lastName"
+													component="p"
+													className="text-red-500 text-sm"
+												/>
+											</div>
 										</div>
 									</div>
 
@@ -172,6 +226,13 @@ const Donation: FC<IDonation> = () => {
 													placeholder="$100.00"
 													className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 												/>
+												<div className="pl-3">
+													<ErrorMessage
+														name="amount"
+														component="p"
+														className="text-red-500 text-sm"
+													/>
+												</div>
 											</div>
 										</div>
 									)}
@@ -189,6 +250,13 @@ const Donation: FC<IDonation> = () => {
 											placeholder="Donor Notes"
 											className="block w-full h-48 bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 										/>
+										<div className="pl-3">
+											<ErrorMessage
+												name="donorNote"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
 									</div>
 									<div className="space-y-2">
 										<label
@@ -204,6 +272,13 @@ const Donation: FC<IDonation> = () => {
 											placeholder="Company Name"
 											className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 										/>
+										<div className="pl-3">
+											<ErrorMessage
+												name="companyName"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
 									</div>
 									<div className="space-y-2">
 										<label
@@ -219,6 +294,13 @@ const Donation: FC<IDonation> = () => {
 											placeholder="example@gmail.com"
 											className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 										/>
+										<div className="pl-3">
+											<ErrorMessage
+												name="email"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
 									</div>
 									<div className="space-y-2">
 										<label
@@ -243,6 +325,13 @@ const Donation: FC<IDonation> = () => {
 												className="block flex-1 w-full sm:w-56 bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 											/>
 										</div>
+										<div className="pl-3">
+											<ErrorMessage
+												name="phoneNumber"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
 									</div>
 									<div className="space-y-2">
 										<label
@@ -258,6 +347,13 @@ const Donation: FC<IDonation> = () => {
 											placeholder="Street Address 1"
 											className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 										/>
+										<div className="pl-3">
+											<ErrorMessage
+												name="street1"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
 									</div>
 									<Field
 										name="street2"
@@ -266,7 +362,14 @@ const Donation: FC<IDonation> = () => {
 										placeholder="Street Address 2"
 										className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 									/>
-									<div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+									<div className="pl-3 mt-[8px_!important]">
+										<ErrorMessage
+											name="street2"
+											component="p"
+											className="text-red-500 text-sm"
+										/>
+									</div>
+									<div className="grid grid-cols-1 sm:grid-cols-2 gap-8 gap-y-2">
 										<Field
 											name="city"
 											id="city"
@@ -281,6 +384,20 @@ const Donation: FC<IDonation> = () => {
 											placeholder="State / Province"
 											className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 										/>
+										<div className="pl-3">
+											<ErrorMessage
+												name="city"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
+										<div className="pl-3">
+											<ErrorMessage
+												name="state"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
 									</div>
 									<Field
 										name="zipCode"
@@ -289,6 +406,13 @@ const Donation: FC<IDonation> = () => {
 										placeholder="Postal / Zip code"
 										className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 									/>
+									<div className="pl-3 mt-[8px_!important]">
+										<ErrorMessage
+											name="zipCode"
+											component="p"
+											className="text-red-500 text-sm"
+										/>
+									</div>
 									{errorMessage && (
 										<p className="text-red-600 font-medium">
 											{errorMessage}
