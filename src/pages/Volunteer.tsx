@@ -1,7 +1,8 @@
 import { FC, useState } from "react";
 import FoooterBanner from "../components/FooterBanner";
 import PageIntro from "../components/PageIntro";
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as yup from "yup";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { BsCheckCircle } from "react-icons/bs";
 
@@ -45,6 +46,31 @@ const Volunteer: FC<IVolunteer> = () => {
 								message: "",
 								cv: null as File | null,
 							}}
+							validationSchema={yup.object({
+								firstName: yup
+									.string()
+									.required("First name is required"),
+								lastName: yup
+									.string()
+									.required("Last name is required"),
+								email: yup
+									.string()
+									.email("Invalid email address")
+									.required("Email is required"),
+								address: yup
+									.string()
+									.required("Address is required"),
+								phoneNumber: yup
+									.string()
+									.required("Phone number is required"),
+								dob: yup
+									.date()
+									.required("Date of birth is required"),
+								message: yup
+									.string()
+									.required("Message is required"),
+								cv: yup.mixed().required("CV is required"),
+							})}
 							onSubmit={(values) => {
 								setLoading(true);
 								let formData = new FormData();
@@ -61,7 +87,7 @@ const Volunteer: FC<IVolunteer> = () => {
 								formData.append("file", values.cv as File);
 
 								fetch(
-									`https://cidi-backend.vercel.app/cidi/cidi-volunteer`,
+									`${process.env.REACT_APP_BACKEND_URL}/cidi/cidi-volunteer`,
 									{
 										method: "POST",
 										body: formData,
@@ -90,7 +116,7 @@ const Volunteer: FC<IVolunteer> = () => {
 										>
 											Full Names
 										</label>
-										<div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+										<div className="grid grid-cols-1 sm:grid-cols-2 gap-8 gap-y-2">
 											<Field
 												name="firstName"
 												id="firstName"
@@ -105,6 +131,20 @@ const Volunteer: FC<IVolunteer> = () => {
 												placeholder="Last Name"
 												className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 											/>
+											<div className="pl-3">
+												<ErrorMessage
+													name="firstName"
+													component="p"
+													className="text-red-500 text-sm"
+												/>
+											</div>
+											<div className="pl-3">
+												<ErrorMessage
+													name="lastName"
+													component="p"
+													className="text-red-500 text-sm"
+												/>
+											</div>
 										</div>
 									</div>
 									<div className="space-y-2">
@@ -123,6 +163,13 @@ const Volunteer: FC<IVolunteer> = () => {
 												className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 											/>
 										</div>
+										<div className="pl-3">
+											<ErrorMessage
+												name="dob"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
 									</div>
 									<div className="space-y-2">
 										<label
@@ -131,7 +178,7 @@ const Volunteer: FC<IVolunteer> = () => {
 										>
 											Contacts
 										</label>
-										<div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+										<div className="grid grid-cols-1 sm:grid-cols-2 gap-8 gap-y-2">
 											<Field
 												name="email"
 												id="email"
@@ -146,6 +193,20 @@ const Volunteer: FC<IVolunteer> = () => {
 												placeholder="Phone Number"
 												className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 											/>
+											<div className="pl-3">
+												<ErrorMessage
+													name="email"
+													component="p"
+													className="text-red-500 text-sm"
+												/>
+											</div>
+											<div className="pl-3">
+												<ErrorMessage
+													name="phoneNumber"
+													component="p"
+													className="text-red-500 text-sm"
+												/>
+											</div>
 										</div>
 									</div>
 									<Field
@@ -155,6 +216,13 @@ const Volunteer: FC<IVolunteer> = () => {
 										placeholder="Address"
 										className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 									/>
+									<div className="pl-3 mt-[8px_!important]">
+										<ErrorMessage
+											name="address"
+											component="p"
+											className="text-red-500 text-sm"
+										/>
+									</div>
 									<div className="space-y-2">
 										<label
 											htmlFor="donorNote"
@@ -169,6 +237,13 @@ const Volunteer: FC<IVolunteer> = () => {
 											placeholder="Message"
 											className="block w-full h-48 bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 										/>
+										<div className="pl-3">
+											<ErrorMessage
+												name="message"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
 									</div>
 									<div className="space-y-2">
 										<label
@@ -194,6 +269,13 @@ const Volunteer: FC<IVolunteer> = () => {
 											}}
 											className="w-full py-1 px-2 border placeholder:text-grayText2 text-sm md:text-base text-grayText focus:outline-none rounded"
 										/>
+										<div className="pl-3">
+											<ErrorMessage
+												name="cv"
+												component="p"
+												className="text-red-500 text-sm"
+											/>
+										</div>
 									</div>
 									{errorMessage && (
 										<p className="text-red-600 font-medium">
