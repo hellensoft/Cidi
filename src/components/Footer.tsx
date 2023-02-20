@@ -1,6 +1,6 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import SectionWrapper from "./SectionWrapper";
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import footerLinks from "../data/footerNav.json";
 import { NavLink, Link } from "react-router-dom";
 import {
@@ -9,6 +9,8 @@ import {
 	FaInstagram,
 	FaTwitter,
 } from "react-icons/fa";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import * as yup from "yup";
 
 interface IFooter {}
 
@@ -36,6 +38,10 @@ const socialMedia = [
 ];
 
 const Footer: FC<IFooter> = () => {
+	const [loading, setLoading] = useState(false);
+	const [isSubmitted, setIsSubmitted] = useState(false);
+	const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
 	return (
 		<div className="bg-sectionGray pt-36 pb-8 sm:pb-20">
 			<SectionWrapper>
@@ -51,14 +57,39 @@ const Footer: FC<IFooter> = () => {
 							activities.
 						</p>
 					</div>
-					<div
-						className="pl-0 md:pl-16 mt-8 md:mt-24 flex flex-col items-start w-full justify-between"
-					>
+					<div className="pl-0 md:pl-16 mt-8 md:mt-24 flex flex-col items-start w-full justify-between">
 						<Formik
 							initialValues={{
 								email: "",
 							}}
-							onSubmit={(values) => console.log(values)}
+							validationSchema={yup.object({
+								email: yup
+									.string()
+									.email("Please enter a valid email")
+									.required("Please fill this field"),
+							})}
+							onSubmit={(values) => {
+								setLoading(true);
+								fetch(
+									`${process.env.REACT_APP_BACKEND_URL}/cidi/cidi-subscribe`,
+									{
+										method: "POST",
+										headers: {
+											"Content-Type": "application/json",
+										},
+										body: JSON.stringify(values),
+									}
+								)
+									.then((res) => res.json())
+									.then((res) => {
+										setLoading(false);
+										setIsSubmitted(true);
+									})
+									.catch((err) => {
+										setErrorMessage(err.message);
+										setLoading(false);
+									});
+							}}
 						>
 							<Form className="w-full">
 								<h2 className="text-md text-darkBlue font-semibold mb-5">
@@ -73,17 +104,34 @@ const Footer: FC<IFooter> = () => {
 									/>
 									<button
 										type="submit"
-										className="bg-greenPrimary hover:bg-darkBlue duration-150 text-white font-medium px-6 sm:px-9 h-full border border-greenPrimary"
+										disabled={loading}
+										className="bg-greenPrimary hover:bg-darkBlue duration-150 text-white font-medium px-6 sm:px-9 h-full border border-greenPrimary flex items-center space-x-4 disabled:bg-gray-300 disabled:cursor-not-allowed"
 									>
-										Subscribe
+										{loading && (
+											<AiOutlineLoading3Quarters className="animate-spin" />
+										)}
+										<span>Subscribe</span>
 									</button>
 								</div>
+								<ErrorMessage
+									name="email"
+									component="p"
+									className="text-red-600 mt-1 font-medium text-sm"
+								/>
+
+								{errorMessage && (
+									<p className="text-red-600 my-1 font-medium text-sm">
+										{errorMessage}
+									</p>
+								)}
+								{isSubmitted && (
+									<p className="text-greenPrimary  my-1 font-medium">
+										The email has been submitted
+									</p>
+								)}
 							</Form>
 						</Formik>
-						<div className="mt-12 md:mt-0">
-							<h2 className="text-md text-darkBlue font-semibold mb-5">
-								Connect with us!
-							</h2>
+						<div className="mt-12">
 							<div className="flex items-center space-x-5">
 								{socialMedia.map((social, index) => (
 									<Link
