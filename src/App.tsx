@@ -15,6 +15,7 @@ import "aos/dist/aos.css";
 import Projects from "./pages/Projects";
 import MediaGallery from "./pages/MediaGallery";
 import ChildRights from "./pages/projects/ChildRights";
+import HealthAndNutrition from "./pages/projects/HealthAndNutrition";
 
 interface IApp {}
 
@@ -40,6 +41,7 @@ const App: FC<IApp> = () => {
 				<Route path="/projects/education" element={<Education />} />
 				<Route path="/projects/agriculture" element={<Agriculture />} />
 				<Route path="/projects/child-rights" element={<ChildRights />} />
+				<Route path="/projects/health-nutrition" element={<HealthAndNutrition />} />
 				<Route
 					path="/projects/water-sanitation"
 					element={<WaterSanitation />}
