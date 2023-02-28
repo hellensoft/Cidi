@@ -3,12 +3,12 @@ import Faqs from "../../components/Faqs";
 import FoooterBanner from "../../components/FooterBanner";
 import PageIntro from "../../components/PageIntro";
 import SectionWrapper from "../../components/SectionWrapper";
-import agriFaq from "../../data/agriFaq.json";
+import healthFaqs from "../../data/healthFaqs.json";
 
 const HealthAndNutrition: FC = () => {
 	return (
 		<div>
-			<PageIntro name="Health and Nutrition" />
+			<PageIntro name="Health and Nutritions" />
 			<SectionWrapper>
 				<div>
 					<div
@@ -28,7 +28,7 @@ const HealthAndNutrition: FC = () => {
 						/>
 					</div>
 					<h2 className="text-darkBlue mt-16 font-semibold text-xl sm:text-[36px]">
-						Situation analysis.
+						Situation analysis in Tanzania.
 					</h2>
 					<p
 						className="text-textBlue mt-16 max-w-[1096px] text-justify mx-auto"
@@ -184,7 +184,7 @@ const HealthAndNutrition: FC = () => {
 					</div>
 				</div>
 			</SectionWrapper>
-			<Faqs faqs={agriFaq} />
+			<Faqs faqs={healthFaqs} />
 			<FoooterBanner text="Help us Improve  Agriculture Livelihood" />
 		</div>
 	);

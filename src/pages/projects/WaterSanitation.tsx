@@ -12,7 +12,7 @@ interface IWaterSanitation {}
 const WaterSanitation: FC<IWaterSanitation> = () => {
 	return (
 		<div>
-			<PageIntro name="Water, Hygiene and Sanitation (WASH)" />
+			<PageIntro name="Water, Sanitation and Hygiene (WASH)" />
 			<SectionWrapper>
 				<div
 					className="grid md:grid-cols-2 lg:grid-cols-[500px_1fr] gap-8 place-items-center"

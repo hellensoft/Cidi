@@ -304,19 +304,19 @@ const Donation: FC<IDonation> = () => {
 									</div>
 									<div className="space-y-2">
 										<label
-											htmlFor="areaCode"
+											// htmlFor="areaCode"
 											className="text-darkBlue text-lg sm:text-xl"
 										>
 											Phone Number
 										</label>
 										<div className="flex flex-col xs:flex-row items-start xs:items-center space-y-4 xs:space-y-0 xs:space-x-4">
-											<Field
+											{/* <Field
 												name="areaCode"
 												id="areaCode"
 												type="number"
 												placeholder="Area Code"
 												className="block w-28 sm:w-36 bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
-											/>
+											/> */}
 											<Field
 												name="phoneNumber"
 												id="phoneNumber"
@@ -355,35 +355,23 @@ const Donation: FC<IDonation> = () => {
 											/>
 										</div>
 									</div>
-									<Field
-										name="street2"
-										id="street2"
-										type="text"
-										placeholder="Street Address 2"
-										className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
-									/>
-									<div className="pl-3 mt-[8px_!important]">
-										<ErrorMessage
-											name="street2"
-											component="p"
-											className="text-red-500 text-sm"
-										/>
-									</div>
+									
 									<div className="grid grid-cols-1 sm:grid-cols-2 gap-8 gap-y-2">
-										<Field
+									<Field
+											name="state"
+											id="state"
+											type="text"
+											placeholder="Country "
+											className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
+										/>
+											<Field
 											name="city"
 											id="city"
 											type="text"
 											placeholder="City"
 											className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
 										/>
-										<Field
-											name="state"
-											id="state"
-											type="text"
-											placeholder="State / Province"
-											className="block w-full bg-transparent rounded-md border-gray-300 shadow-sm focus:border-greenPrimary text-base sm:text-lg"
-										/>
+										
 										<div className="pl-3">
 											<ErrorMessage
 												name="city"
@@ -399,7 +387,7 @@ const Donation: FC<IDonation> = () => {
 											/>
 										</div>
 									</div>
-									<Field
+									{/* <Field
 										name="zipCode"
 										id="zipCode"
 										type="text"
@@ -412,12 +400,12 @@ const Donation: FC<IDonation> = () => {
 											component="p"
 											className="text-red-500 text-sm"
 										/>
-									</div>
+									</div>*/}
 									{errorMessage && (
-										<p className="text-red-600 font-medium">
-											{errorMessage}
-										</p>
-									)}
+									<p className="text-red-600 font-medium">
+									{errorMessage}
+									</p>
+									)} 
 									<div
 										className="pt-12 flex justify-center"
 										data-aos="fade-up"

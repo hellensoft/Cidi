@@ -181,9 +181,13 @@ const Agriculture: FC<IAgriculture> = () => {
 					</div>
 
 					{/* Climate Change  */}
-					<h2 className="text-darkBlue mt-16 font-semibold text-xl sm:text-[36px]">
-						Climate Change situation in Tanzania
+					<h2 className="text-darkBlue mt-16 font-semibold text-xl sm:text-[40px]">
+						Climate Change 
 					</h2>
+					<h2 className="text-xl font-regular tracking-tight text-blackPrimary sm:text-2xl mt-4">
+					Situation Analysis in Tanzania
+					</h2>
+					
 					<p
 						className="text-textBlue mt-6 mb-16 max-w-[1096px] text-justify mx-auto"
 						data-aos="fade-up"

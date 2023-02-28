@@ -29,9 +29,9 @@
 	},
 	{
 		"icon": "/images/svgs/health-care.svg",
-		"name": "Health and Nutrition",
+		"name": "Health and Nutritions",
 		"description": "Raising awareness of the interrelationship between nutrition, exercise, physical activity and lifestyle for improving health across the lifespan..",
-		"link": "/projects/water-sanitation",
+		"link": "/projects/health-nutrition",
 		"highlight": false
 	}
 ]
