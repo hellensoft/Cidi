@@ -55,6 +55,17 @@ const About: FC<IAbout> = () => {
 								and accountability, and strive to become and
 								remain a member driven organization.
 							</p>
+							<h2 className="text-darkBlue text-xl font-semibold">
+               OUR STATEMENT
+              </h2>
+              <p className="text-textGray text-sm leading-[27px] text-justify">
+                As an organization we believe that God loves all people equally
+                and that his vision for this world, is to be a place where all
+                people are cared for, where everyone’s needs are met and
+                everyone is respected and valued. We believe that, our call is
+                to make this vision reality, prioritizing the most vulnerable
+                and neediest groups to bring help and hope.
+              </p>
 						</div>
 					</div>
 					<div

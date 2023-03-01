@@ -15,7 +15,7 @@
 	},
 	{
 		"icon": "/images/svgs/drop.svg",
-		"name": "Water, Hygiene & Sanitation (WASH)",  
+		"name": "Water, Sanitation & Hygiene (WASH)",  
 		"description": "Safe water, sanitation and hygiene in communities..",
 		"link": "/projects/water-sanitation",
 		"highlight": false

@@ -6,7 +6,7 @@
 		"end": true
 	},
 	{
-		"name": "About",
+		"name": "About Us",
 		"link": "/about",
 		"multiple": true,
 		"end": false,
@@ -35,13 +35,6 @@
 			{
 				"name": "Our Team",
 				"hashLink": "/about#team",
-				"end": false,
-				"link": "/about",
-				"hash": true
-			},
-			{
-				"name": "Oppurtunities",
-				"hashLink": "/about#opportunities",
 				"end": false,
 				"link": "/about",
 				"hash": true

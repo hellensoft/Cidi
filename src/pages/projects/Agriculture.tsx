@@ -30,8 +30,8 @@ const Agriculture: FC<IAgriculture> = () => {
 						/>
 					</div>
 					<h2 className="text-darkBlue mt-16 font-semibold text-xl sm:text-[36px]">
-						Agriculture and Food Security
-						situation analysis in Tanzania
+						Agriculture and Food Security <br/>
+						Situation analysis in Tanzania
 					</h2>
 					<p
 						className="text-textBlue mt-16 max-w-[1096px] text-justify mx-auto"
