@@ -90,8 +90,7 @@ const About: FC<IAbout> = () => {
 								Vision
 							</h1>
 							<p className="text-lightText text-[15px] max-w-[668px] leading-[27px] mx-auto">
-								Improved community wellbeing through quality
-								education and shared information.
+								A community with Improved community wellbeing for all.
 							</p>
 						</div>
 						<div className=" mx-auto bg-darkBlue text-center py-12 px-6 rounded-[10px] my-28">
@@ -99,10 +98,7 @@ const About: FC<IAbout> = () => {
 								Mission
 							</h1>
 							<p className="text-lightText text-[15px] max-w-[668px] leading-[27px] mx-auto">
-								To transform the lives of children, youth and
-								community at large through provision of quality
-								education and shared information required for
-								self-determination and developmental support.
+							To identify and address the route causes of problems facing the poor, vulnerable and marginalized population groups through strategic innovation and methodologies.
 							</p>
 						</div>
 					</div>
