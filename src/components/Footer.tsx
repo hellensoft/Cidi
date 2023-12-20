@@ -57,6 +57,7 @@ const Footer: FC<IFooter> = () => {
 							activities.
 						</p>
 					</div>
+			
 					<div className="pl-0 md:pl-16 mt-8 md:mt-24 flex flex-col items-start w-full justify-between">
 						<Formik
 							initialValues={{
@@ -131,6 +132,9 @@ const Footer: FC<IFooter> = () => {
 								)}
 							</Form>
 						</Formik>
+
+						
+
 						<div className="mt-12">
 							<div className="flex items-center space-x-5">
 								{socialMedia.map((social, index) => (
@@ -148,7 +152,7 @@ const Footer: FC<IFooter> = () => {
 				</div>
 				<div className="grid grid-cols-1 justify-items-center gap-4 lg:gap-0 lg:grid-cols-2">
 					<p className="text-darkBlue text-sm md:text-base font-semibold">
-						© Copyright 2022 CIDI. All Right's Reserved. Experienced
+						© Copyright 2023 CIDI. All Right's Reserved. Experienced
 						by HELLENSoft
 					</p>
 					<div className="lg:pl-16 row-start-1 lg:col-start-2 grid grid-cols-3 gap-2 xs:grid-cols-7 xs:justify-items-center max-w-[600px] justify-between w-full">
